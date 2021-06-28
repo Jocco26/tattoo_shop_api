@@ -1,42 +1,52 @@
 <template>
-  <div >
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" >
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img alt="the logo" src="'/./assets/newlogo.png'"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
-            data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img :src="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TATTOO</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PIERCING</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SUPPLIES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">LOCATION</a>
-                </li>
-                
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">TATTOO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PIERCING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SUPPLIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LOCATION</a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+
+
         </div>
-
-
-
-    </div>
 </nav>
     </div>
   
 </template>
 
 <script>
-
+    export default {
+        data(){
+            return{
+                message: 'hellow',
+                image: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/resources/js/assets/newlogo.png?raw=true',
+                
+                
+                
+            }
+        }
+    }
 </script>
