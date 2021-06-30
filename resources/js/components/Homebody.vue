@@ -1,7 +1,7 @@
 <template>
-    <section id="features" v-bind:style="{ backgroundImage: 'bg' }">
+    <section id="features" v-bind:style="{ backgroundImage: 'url(' + bg + ')'  }">
                 <div class="DAlogo" id="logo1">
-                    <h1 class="DAlogo"><img :src="logo"></h1>
+                    <h1 class="DAlogo"><img id="centerlogo" :src="logo"></h1>
                     <form action="booknow.php" method="get">
                     <button class="DAlogo btn btn-outline-light btn-lg" type="submit">
                     ASK FOR A QUOTE
@@ -15,7 +15,8 @@
         data(){
             return{
                 logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA.png?raw=true',
-                bg:''
+                bg:'~@/assets/imgs/fixedbg03.png',
+                //bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg03.jpg?raw=true',
             }
         }
     }
@@ -30,4 +31,8 @@
 .DAlogo{
     text-align:center;
   }
+
+#centerlogo{
+  width:25%;
+}
 </style>

@@ -1922,7 +1922,8 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA.png?raw=true',
-      bg: ''
+      bg: '~@/assets/imgs/fixedbg03.png' //bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg03.jpg?raw=true',
+
     };
   }
 });
@@ -6469,7 +6470,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38084,11 +38085,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "section",
-    { style: { backgroundImage: "bg" }, attrs: { id: "features" } },
+    {
+      style: { backgroundImage: "url(" + _vm.bg + ")" },
+      attrs: { id: "features" }
+    },
     [
       _c("div", { staticClass: "DAlogo", attrs: { id: "logo1" } }, [
         _c("h1", { staticClass: "DAlogo" }, [
-          _c("img", { attrs: { src: _vm.logo } })
+          _c("img", { attrs: { id: "centerlogo", src: _vm.logo } })
         ]),
         _vm._v(" "),
         _vm._m(0)
