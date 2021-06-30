@@ -42,7 +42,7 @@
         data(){
             return{
                 message: 'hellow',
-                image: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/resources/js/assets/newlogo.png?raw=true',
+                image: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/newlogo.png?raw=true',
                 
                 
                 
