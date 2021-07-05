@@ -1918,6 +1918,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -6493,7 +6498,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    min-height: 200px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38151,22 +38156,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    {
-      style: { backgroundImage: "url(" + _vm.bg + ")" },
-      attrs: { id: "features" }
-    },
-    [
-      _c("div", { staticClass: "DAlogo", attrs: { id: "logo1" } }, [
-        _c("h1", { staticClass: "DAlogo" }, [
-          _c("img", { attrs: { id: "centerlogo", src: _vm.logo } })
-        ]),
-        _vm._v(" "),
-        _vm._m(0)
-      ])
-    ]
-  )
+  return _c("div", [
+    _c(
+      "section",
+      {
+        style: { backgroundImage: "url(" + _vm.bg + ")" },
+        attrs: { id: "features" }
+      },
+      [
+        _c("div", { staticClass: "DAlogo", attrs: { id: "logo1" } }, [
+          _c("h1", { staticClass: "DAlogo" }, [
+            _c("img", { attrs: { id: "centerlogo", src: _vm.logo } })
+          ]),
+          _vm._v(" "),
+          _vm._m(0)
+        ])
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { attrs: { id: "promobar" } })
+  ])
 }
 var staticRenderFns = [
   function() {
@@ -38180,7 +38189,7 @@ var staticRenderFns = [
           staticClass: "DAlogo btn btn-outline-light btn-lg",
           attrs: { type: "submit" }
         },
-        [_vm._v("\n                ASK FOR A QUOTE\n                ")]
+        [_vm._v("\n                    ASK FOR A QUOTE\n                    ")]
       )
     ])
   }
