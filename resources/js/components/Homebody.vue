@@ -19,7 +19,7 @@
     export default {
         data(){
             return{
-                logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA.png?raw=true',
+                logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
                 bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
             }
         }

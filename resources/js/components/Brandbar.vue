@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" >
+    <nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top" >
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img :src="image"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -62,6 +62,7 @@ html, body{
   padding: .8rem;
   padding-left: 100px;
   padding-right: 70px;
+  background-color: black;
 }
 
 ul {

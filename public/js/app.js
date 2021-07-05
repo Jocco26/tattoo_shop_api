@@ -1926,7 +1926,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA.png?raw=true',
+      logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
       bg: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true'
     };
   }
@@ -6474,7 +6474,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nhtml, body{\r\n  height:100%;\r\n  width:100%;\r\n  font-family:'Poppins', sans-serif;\r\n  color:#222;\n}\n.navbar{\r\n  padding: .8rem;\r\n  padding-left: 100px;\r\n  padding-right: 70px;\n}\nul {\r\n  width: 70%;\r\n  margin: auto;\n}\n.navbar-nav li{\r\n  padding-right:20px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nhtml, body{\r\n  height:100%;\r\n  width:100%;\r\n  font-family:'Poppins', sans-serif;\r\n  color:#222;\n}\n.navbar{\r\n  padding: .8rem;\r\n  padding-left: 100px;\r\n  padding-right: 70px;\r\n  background-color: black;\n}\nul {\r\n  width: 70%;\r\n  margin: auto;\n}\n.navbar-nav li{\r\n  padding-right:20px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38055,7 +38055,9 @@ var render = function() {
   return _c("div", [
     _c(
       "nav",
-      { staticClass: "navbar navbar-expand-md navbar-dark bg-dark sticky-top" },
+      {
+        staticClass: "navbar navbar-expand-md navbar-dark bg-black sticky-top"
+      },
       [
         _c("div", { staticClass: "container-fluid" }, [
           _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
