@@ -10,7 +10,15 @@
                         </form>
                     </div>   
         </section>
-        <div id="promobar">
+        <div class="container-fluid" id="promobar">
+            <div class="row">
+                <div class="col-9">
+                    <p><b>Tattoo promo! -{{promo_amount}} off</b>, Applicable when you avail a tattoo with a minimum price of atleast 3k and maximum of 8k, strictly for appointments only.</p>
+                </div>
+                <div class="col-3">
+                    <button>Book Now</button>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -19,8 +27,10 @@
     export default {
         data(){
             return{
+                promo_amount: 20,
                 logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
                 bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
+                promo_pic:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/tatpromo_txt.png?raw=true',
             }
         }
     }
@@ -42,6 +52,30 @@
 
 #promobar{
     background-color: black;
-    min-height: 200px;
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    color:white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;    
 }
+
+#promobar button{
+    background-color: #d87114;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+    border-radius: 8px;
+}
+
+
+
+
+
+
 </style>

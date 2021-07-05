@@ -59,9 +59,6 @@ html, body{
 }
 
 .navbar{
-  padding: .8rem;
-  padding-left: 100px;
-  padding-right: 70px;
   background-color: black;
 }
 

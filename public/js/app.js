@@ -1923,11 +1923,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      promo_amount: 20,
       logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
-      bg: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true'
+      bg: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
+      promo_pic: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/tatpromo_txt.png?raw=true'
     };
   }
 });
@@ -6474,7 +6484,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nhtml, body{\r\n  height:100%;\r\n  width:100%;\r\n  font-family:'Poppins', sans-serif;\r\n  color:#222;\n}\n.navbar{\r\n  padding: .8rem;\r\n  padding-left: 100px;\r\n  padding-right: 70px;\r\n  background-color: black;\n}\nul {\r\n  width: 70%;\r\n  margin: auto;\n}\n.navbar-nav li{\r\n  padding-right:20px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nhtml, body{\r\n  height:100%;\r\n  width:100%;\r\n  font-family:'Poppins', sans-serif;\r\n  color:#222;\n}\n.navbar{\r\n  background-color: black;\n}\nul {\r\n  width: 70%;\r\n  margin: auto;\n}\n.navbar-nav li{\r\n  padding-right:20px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6498,7 +6508,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    min-height: 200px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'Russo One', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    padding-top: 25px;\r\n    padding-bottom: 25px;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    float: right;\r\n    border-radius: 8px;\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38176,7 +38186,22 @@ var render = function() {
       ]
     ),
     _vm._v(" "),
-    _c("div", { attrs: { id: "promobar" } })
+    _c("div", { staticClass: "container-fluid", attrs: { id: "promobar" } }, [
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-9" }, [
+          _c("p", [
+            _c("b", [
+              _vm._v("Tattoo promo! -" + _vm._s(_vm.promo_amount) + " off")
+            ]),
+            _vm._v(
+              ", Applicable when you avail a tattoo with a minimum price of atleast 3k and maximum of 8k, strictly for appointments only."
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _vm._m(1)
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -38193,6 +38218,14 @@ var staticRenderFns = [
         },
         [_vm._v("\n                    ASK FOR A QUOTE\n                    ")]
       )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-3" }, [
+      _c("button", [_vm._v("Book Now")])
     ])
   }
 ]
