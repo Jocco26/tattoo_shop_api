@@ -10,6 +10,7 @@
                         </form>
                     </div>   
         </section>
+
         <div class="container-fluid" id="promobar">
             <div class="row">
                 <div class="col-9">
@@ -19,6 +20,10 @@
                     <button>Book Now</button>
                 </div>
             </div>
+        </div>
+
+        <div class="container-fluid" id="home_vid">
+            <h1>See Us In Action</h1>
         </div>
     </div>
 </template>
@@ -71,6 +76,12 @@
     font-size: 16px;
     float: right;
     border-radius: 8px;
+}
+
+#home_vid{
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    padding: 50px;
 }
 
 

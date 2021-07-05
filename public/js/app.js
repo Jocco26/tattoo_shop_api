@@ -1931,6 +1931,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -6508,7 +6513,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'Russo One', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    padding-top: 25px;\r\n    padding-bottom: 25px;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    float: right;\r\n    border-radius: 8px;\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#features{\r\n  background-size: cover;\r\n  background-attachment: fixed;\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'Russo One', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    padding-top: 25px;\r\n    padding-bottom: 25px;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    float: right;\r\n    border-radius: 8px;\n}\n#home_vid{\r\n    font-family: 'Russo One', sans-serif;\r\n    text-align: center;\r\n    padding: 50px;\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38201,7 +38206,9 @@ var render = function() {
         _vm._v(" "),
         _vm._m(1)
       ])
-    ])
+    ]),
+    _vm._v(" "),
+    _vm._m(2)
   ])
 }
 var staticRenderFns = [
@@ -38227,6 +38234,16 @@ var staticRenderFns = [
     return _c("div", { staticClass: "col-3" }, [
       _c("button", [_vm._v("Book Now")])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container-fluid", attrs: { id: "home_vid" } },
+      [_c("h1", [_vm._v("See Us In Action")])]
+    )
   }
 ]
 render._withStripped = true
