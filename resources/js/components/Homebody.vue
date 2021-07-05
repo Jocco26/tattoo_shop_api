@@ -15,8 +15,7 @@
         data(){
             return{
                 logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA.png?raw=true',
-                bg:'~@/assets/imgs/fixedbg03.png',
-                //bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg03.jpg?raw=true',
+                bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
             }
         }
     }

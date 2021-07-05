@@ -50,3 +50,26 @@
         }
     }
 </script>
+<style>
+html, body{
+  height:100%;
+  width:100%;
+  font-family:'Poppins', sans-serif;
+  color:#222;
+}
+
+.navbar{
+  padding: .8rem;
+  padding-left: 100px;
+  padding-right: 70px;
+}
+
+ul {
+  width: 70%;
+  margin: auto;
+}
+
+.navbar-nav li{
+  padding-right:20px;
+}
+</style>
