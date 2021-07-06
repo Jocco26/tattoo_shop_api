@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <section id="features" v-bind:style="{ backgroundImage: 'url(' + bg + ')'  }">
+    <div id="main_div" v-bind:style="{ backgroundImage: 'url(' + bg + ')'  }">
+        <section id="features" >
                     <div class="DAlogo" id="logo1">
                         <h1 class="DAlogo"><img id="centerlogo" :src="logo"></h1>
                         <form action="booknow.php" method="get">
@@ -23,8 +23,8 @@
         </div>
 
         <div class="wrapper" id="home_vid">
-            <h1>See Us In Action</h1>
-            <video controls :src="video"></video>
+            <h1>Come, Visit Us</h1>
+            <video controls :src="video" :poster="thumbnail"></video>
         </div>
     </div>
 </template>
@@ -34,6 +34,7 @@
         data(){
             return{
                 promo_amount: 20,
+                thumbnail:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/thumbnail01.JPG?raw=true',
                 video:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
                 logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
                 bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
@@ -43,9 +44,14 @@
     }
 </script>
 <style>
+#main_div{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+
 #features{
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 500px;
 }
 
@@ -85,10 +91,13 @@
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top:50px;
+    
+    background: rgb(251, 252, 251, 0.55)
 }
 
 #home_vid h1{
-    margin: 50px;
+    margin-bottom: 50px;
 }
 
 #home_vid video{
