@@ -1943,6 +1943,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       promo_amount: 20,
       thumbnail: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/thumbnail01.JPG?raw=true',
+      thumbnail02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/p_thumbnail01.JPG?raw=true',
       video01: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
       video02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/1080p%20-%20Piercing%20by%20Don%20Antonio%20-%20YouTube.webm?raw=true',
       logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
@@ -38219,7 +38220,9 @@ var render = function() {
           attrs: { controls: "", src: _vm.video01, poster: _vm.thumbnail }
         }),
         _vm._v(" "),
-        _c("video", { attrs: { controls: "", src: _vm.video02 } })
+        _c("video", {
+          attrs: { controls: "", src: _vm.video02, poster: _vm.thumbnail02 }
+        })
       ])
     ]
   )
