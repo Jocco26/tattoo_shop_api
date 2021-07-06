@@ -22,8 +22,9 @@
             </div>
         </div>
 
-        <div class="container-fluid" id="home_vid">
+        <div class="wrapper" id="home_vid">
             <h1>See Us In Action</h1>
+            <video controls :src="video"></video>
         </div>
     </div>
 </template>
@@ -33,6 +34,7 @@
         data(){
             return{
                 promo_amount: 20,
+                video:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
                 logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
                 bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
                 promo_pic:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/tatpromo_txt.png?raw=true',
@@ -81,9 +83,18 @@
 #home_vid{
     font-family: 'Russo One', sans-serif;
     text-align: center;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
+#home_vid h1{
+    margin: 50px;
+}
+
+#home_vid video{
+    width: 90%;
+    max-height: 90%;
+}
 
 
 
