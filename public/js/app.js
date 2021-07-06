@@ -1938,6 +1938,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1946,6 +1961,7 @@ __webpack_require__.r(__webpack_exports__);
       thumbnail02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/p_thumbnail01.JPG?raw=true',
       video01: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
       video02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/1080p%20-%20Piercing%20by%20Don%20Antonio%20-%20YouTube.webm?raw=true',
+      aboutus_pic: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/aboutus_pic.JPG?raw=true',
       logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
       bg: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
       promo_pic: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/tatpromo_txt.png?raw=true'
@@ -6519,7 +6535,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'Russo One', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    padding-top: 25px;\r\n    padding-bottom: 25px;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    float: right;\r\n    border-radius: 8px;\n}\n#home_vid{\r\n    font-family: 'Russo One', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    \r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\r\n    margin-bottom: 30px;\n}\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#ribbon{\r\n    background-color: black;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    padding-top: 25px;\r\n    padding-bottom: 25px;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: justify;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    border-radius: 8px;\n}\n#home_vid{\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    \r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\r\n    margin-bottom: 30px;\n}\n#about_us{\r\n    background-color: white;\r\n    padding-top:50px;\n}\n#aboutus-txt p{\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: .2px;\n}\n#aboutus-img img{\r\n    width: 100%;\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38080,7 +38096,7 @@ var render = function() {
         staticClass: "navbar navbar-expand-md navbar-dark bg-black sticky-top"
       },
       [
-        _c("div", { staticClass: "container-fluid" }, [
+        _c("div", { staticClass: "container" }, [
           _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
             _c("img", { attrs: { src: _vm.image } })
           ]),
@@ -38196,20 +38212,22 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "container-fluid", attrs: { id: "promobar" } }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-9" }, [
-            _c("p", [
-              _c("b", [
-                _vm._v("Tattoo promo! -" + _vm._s(_vm.promo_amount) + " off")
-              ]),
-              _vm._v(
-                ", Applicable when you avail a tattoo with a minimum price of atleast 3k and maximum of 8k, strictly for appointments only."
-              )
-            ])
-          ]),
-          _vm._v(" "),
-          _vm._m(1)
+      _c("section", { attrs: { id: "ribbon" } }, [
+        _c("div", { staticClass: "container", attrs: { id: "promobar" } }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-md-9" }, [
+              _c("p", [
+                _c("b", [
+                  _vm._v("Tattoo promo! -" + _vm._s(_vm.promo_amount) + " off")
+                ]),
+                _vm._v(
+                  ", Applicable when you avail a tattoo with a minimum price of atleast 3k and maximum of 8k, strictly for appointments only."
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(1)
+          ])
         ])
       ]),
       _vm._v(" "),
@@ -38223,6 +38241,20 @@ var render = function() {
         _c("video", {
           attrs: { controls: "", src: _vm.video02, poster: _vm.thumbnail02 }
         })
+      ]),
+      _vm._v(" "),
+      _c("div", { attrs: { id: "about_us" } }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row flex-column-reverse flex-lg-row" }, [
+            _vm._m(2),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "col-md-6", attrs: { id: "aboutus-img" } },
+              [_c("img", { attrs: { src: _vm.aboutus_pic } })]
+            )
+          ])
+        ])
       ])
     ]
   )
@@ -38247,9 +38279,27 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-3" }, [
+    return _c("div", { staticClass: "col-md-3" }, [
       _c("button", [_vm._v("Book Now")])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-md-6", attrs: { id: "aboutus-txt" } },
+      [
+        _c("h3", [_vm._v("About Us")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v(
+            "Don Antonio is young and growing tattoo brand opened in 2016 located in commonwealth avenu Quezon city aside from professional tattoo\n                    we also offer professional body piercing service and we also sell high quality tattoo supplies for aspiring tattoo artist."
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true

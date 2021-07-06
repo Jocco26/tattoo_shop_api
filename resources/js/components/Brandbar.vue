@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top" >
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="#"><img :src="image"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" 
                 data-target="#navbarResponsive">

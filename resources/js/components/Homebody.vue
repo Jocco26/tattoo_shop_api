@@ -10,23 +10,38 @@
                         </form>
                     </div>   
         </section>
-
-        <div class="container-fluid" id="promobar">
-            <div class="row">
-                <div class="col-9">
-                    <p><b>Tattoo promo! -{{promo_amount}} off</b>, Applicable when you avail a tattoo with a minimum price of atleast 3k and maximum of 8k, strictly for appointments only.</p>
-                </div>
-                <div class="col-3">
-                    <button>Book Now</button>
+        <section id="ribbon">
+            <div class="container" id="promobar">
+                <div class="row">
+                    <div class="col-md-9">
+                        <p><b>Tattoo promo! -{{promo_amount}} off</b>, Applicable when you avail a tattoo with a minimum price of atleast 3k and maximum of 8k, strictly for appointments only.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <button>Book Now</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="wrapper" id="home_vid">
             <h1>Come, Visit Us</h1>
             <video controls :src="video01" :poster="thumbnail"></video>
             <video controls :src="video02" :poster="thumbnail02"></video>
         </div>
+        <div id="about_us">
+            <div class="container">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div id="aboutus-txt" class="col-md-6">
+                         <h3>About Us</h3>
+                        <p>Don Antonio is young and growing tattoo brand opened in 2016 located in commonwealth avenu Quezon city aside from professional tattoo
+                        we also offer professional body piercing service and we also sell high quality tattoo supplies for aspiring tattoo artist.</p>                    
+                    </div>
+                    <div id="aboutus-img" class="col-md-6">
+                       <img :src="aboutus_pic"> 
+                    </div>
+                </div>
+            </div>   
+        </div>  
     </div>
 </template>
 
@@ -39,6 +54,7 @@
                 thumbnail02:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/p_thumbnail01.JPG?raw=true',
                 video01:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
                 video02:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/1080p%20-%20Piercing%20by%20Don%20Antonio%20-%20YouTube.webm?raw=true',
+                aboutus_pic:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/aboutus_pic.JPG?raw=true',
                 logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
                 bg:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
                 promo_pic:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/tatpromo_txt.png?raw=true',
@@ -66,9 +82,13 @@
   width:25%;
 }
 
+#ribbon{
+    background-color: black;
+}
+
 #promobar{
     background-color: black;
-    font-family: 'Russo One', sans-serif;
+    font-family: 'OpenSans-Bold', sans-serif;
     font-weight: 500;
     color:white;
     padding-top: 25px;
@@ -81,16 +101,15 @@
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
+    text-align: justify;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    float: right;
     border-radius: 8px;
 }
 
 #home_vid{
-    font-family: 'Russo One', sans-serif;
+    font-family: 'OpenSans-Bold', sans-serif;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
@@ -108,6 +127,23 @@
     max-height: 90%;
     margin-bottom: 30px;
 }
+
+#about_us{
+    background-color: white;
+    padding-top:50px;
+}
+
+#aboutus-txt p{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: .2px;
+}
+
+#aboutus-img img{
+    width: 100%;
+}
+
+
 
 
 
