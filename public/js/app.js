@@ -1937,12 +1937,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
       promo_amount: 20,
       thumbnail: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/thumbnail01.JPG?raw=true',
-      video: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
+      video01: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
+      video02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/1080p%20-%20Piercing%20by%20Don%20Antonio%20-%20YouTube.webm?raw=true',
       logo: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/DA_logo02.png?raw=true',
       bg: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/fixedbg04.jpg?raw=true',
       promo_pic: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/tatpromo_txt.png?raw=true'
@@ -6516,7 +6518,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'Russo One', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    padding-top: 25px;\r\n    padding-bottom: 25px;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    float: right;\r\n    border-radius: 8px;\n}\n#home_vid{\r\n    font-family: 'Russo One', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    \r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\n}\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'Russo One', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    padding-top: 25px;\r\n    padding-bottom: 25px;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-align: center;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    float: right;\r\n    border-radius: 8px;\n}\n#home_vid{\r\n    font-family: 'Russo One', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    \r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\r\n    margin-bottom: 30px;\n}\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38214,8 +38216,10 @@ var render = function() {
         _c("h1", [_vm._v("Come, Visit Us")]),
         _vm._v(" "),
         _c("video", {
-          attrs: { controls: "", src: _vm.video, poster: _vm.thumbnail }
-        })
+          attrs: { controls: "", src: _vm.video01, poster: _vm.thumbnail }
+        }),
+        _vm._v(" "),
+        _c("video", { attrs: { controls: "", src: _vm.video02 } })
       ])
     ]
   )
