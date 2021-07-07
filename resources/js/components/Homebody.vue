@@ -1,6 +1,6 @@
 <template>
     <div id="main_div" v-bind:style="{ backgroundImage: 'url(' + bg + ')'  }">
-        <section id="features" >
+        <section class="container" id="features" >
                     <div class="DAlogo" id="logo1">
                         <h1 class="DAlogo"><img id="centerlogo" :src="logo"></h1>
                         <form action="booknow.php" method="get">
@@ -10,6 +10,7 @@
                         </form>
                     </div>   
         </section>
+
         <section id="ribbon">
             <div class="container" id="promobar">
                 <div class="row">
@@ -32,7 +33,7 @@
             <div class="container">
                 <div class="row flex-column-reverse flex-lg-row">
                     <div id="aboutus-txt" class="col-md-6">
-                         <h3>About Us</h3>
+                         <h2>About Us</h2>
                         <p>Don Antonio is young and growing tattoo brand opened in 2016 located in commonwealth avenu Quezon city aside from professional tattoo
                         we also offer professional body piercing service and we also sell high quality tattoo supplies for aspiring tattoo artist.</p>                    
                     </div>
@@ -41,7 +42,12 @@
                     </div>
                 </div>
             </div>   
-        </div>  
+        </div>
+        <section id="team">
+            <div class="container">
+                <h1><b>Follow Us On Social Media</b></h1>
+            </div>
+        </section>  
     </div>
 </template>
 
@@ -72,10 +78,12 @@
 
 #features{
   min-height: 500px;
+  padding-top: 60px;
 }
 
 .DAlogo{
     text-align:center;
+
   }
 
 #centerlogo{
@@ -84,6 +92,8 @@
 
 #ribbon{
     background-color: black;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 #promobar{
@@ -91,8 +101,6 @@
     font-family: 'OpenSans-Bold', sans-serif;
     font-weight: 500;
     color:white;
-    padding-top: 25px;
-    padding-bottom: 25px;
     font-size: 18px;    
 }
 
@@ -101,11 +109,11 @@
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: justify;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
+    float: right;
 }
 
 #home_vid{
@@ -114,7 +122,6 @@
     padding-left: 50px;
     padding-right: 50px;
     padding-top:50px;
-    
     background: rgb(251, 252, 251, 0.55)
 }
 
@@ -131,6 +138,13 @@
 #about_us{
     background-color: white;
     padding-top:50px;
+    padding-bottom:50px;
+}
+
+#about_us h2{
+    margin-bottom: 20px;
+    line-height: 3.125rem;
+    color: #444;
 }
 
 #aboutus-txt p{
@@ -143,7 +157,29 @@
     width: 100%;
 }
 
+#team{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'OpenSans-Bold', sans-serif;
+    padding-top: 70px;
+}
 
+
+
+@media all and (max-width:750px){
+    #centerlogo{
+        width: 50%;
+    }
+    
+    #promobar{
+        text-align: center;
+    }
+
+    #promobar button{
+        float: none;
+    }
+}
 
 
 
