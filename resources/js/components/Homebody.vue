@@ -46,6 +46,29 @@
         <section id="team">
             <div class="container">
                 <h1><b>Follow Us On Social Media</b></h1>
+                <div class="row">
+                    <div class="col">
+                        <a href="https://www.facebook.com/d.a.tattoo.2016">
+                            <img :src="fb_icon" width="100px">
+                            <br>
+                        175k Followers
+                        </a>                       
+                    </div>
+                    <div class="col">
+                        <a href="https://www.instagram.com/da.tattoo/">
+                            <img :src="ig_icon" width="70px">
+                            <br>
+                        10.8k Followers
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://www.youtube.com/channel/UC6o-JAYm3r4p3cn8qAk4Lbw">
+                            <img :src="yt_icon" width="70px">
+                            <br>
+                        349 Subscribers
+                        </a>
+                    </div>
+                </div> 
             </div>
         </section>  
     </div>
@@ -56,6 +79,9 @@
         data(){
             return{
                 promo_amount: 20,
+                fb_icon:'https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png',
+                ig_icon:'http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png',
+                yt_icon:'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c545.png',
                 thumbnail:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/thumbnail01.JPG?raw=true',
                 thumbnail02:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/p_thumbnail01.JPG?raw=true',
                 video01:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
@@ -163,6 +189,16 @@
     text-align: center;
     font-family: 'OpenSans-Bold', sans-serif;
     padding-top: 70px;
+}
+
+#team h1{
+    margin-bottom: 30px;
+}
+
+#team a{
+    color: #454545;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 
