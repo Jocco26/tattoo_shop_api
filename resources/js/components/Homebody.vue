@@ -70,11 +70,21 @@
                     </div>
                 </div> 
             </div>
-        </section>  
+        </section>
+        
+        <!--<section>
+            <div class="container" id="ig-pics">
+            </div>
+        </section>-->  
     </div>
+    
 </template>
 
+
+
 <script>
+    import VueInstagram from 'vue-instagram';
+
     export default {
         data(){
             return{
@@ -199,6 +209,10 @@
     color: #454545;
     text-decoration: none;
     font-size: 14px;
+}
+
+#ig-pics img{
+    width: 25%;
 }
 
 

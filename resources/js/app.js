@@ -1,3 +1,4 @@
+
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -21,6 +22,7 @@ window.Vue = require('vue').default;
 
 Vue.component('brandbar', require('./components/Brandbar.vue').default);
 Vue.component('homebody', require('./components/Homebody.vue').default);
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -25,6 +25,7 @@
         "vue-template-compiler": "^2.6.14"
     },
     "dependencies": {
-        "chokidar": "^2.1.8"
+        "chokidar": "^2.1.8",
+        "vue-instagram": "^3.0.0"
     }
 }
