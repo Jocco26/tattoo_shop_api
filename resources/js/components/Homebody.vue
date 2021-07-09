@@ -68,6 +68,20 @@
                         349 Subscribers
                         </a>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img src="" alt=""></a>
+                    </div>
                 </div> 
             </div>
         </section>
