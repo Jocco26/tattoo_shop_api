@@ -1992,10 +1992,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      ig_pic01: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic01.jpg?raw=true',
+      ig_pic02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic02.jpg?raw=true',
+      ig_pic03: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic03.jpg?raw=true',
+      ig_pic04: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic04.jpg?raw=true',
       promo_amount: 20,
       fb_icon: 'https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png',
       ig_icon: 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png',
@@ -6578,7 +6596,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\r\n  padding-top: 60px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#ribbon{\r\n    background-color: black;\r\n    padding-top: 60px;\r\n    padding-bottom: 60px;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    border-radius: 8px;\r\n    float: right;\n}\n#home_vid{\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\r\n    margin-bottom: 30px;\n}\n#about_us{\r\n    background-color: white;\r\n    padding-top:50px;\r\n    padding-bottom:50px;\n}\n#about_us h2{\r\n    margin-bottom: 20px;\r\n    line-height: 3.125rem;\r\n    color: #444;\n}\n#aboutus-txt p{\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: .2px;\n}\n#aboutus-img img{\r\n    width: 100%;\n}\n#team{\r\n    background-color: black;\r\n    color: white;\r\n    text-align: center;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    padding-top: 70px;\n}\n#team h1{\r\n    margin-bottom: 30px;\n}\n#team a{\r\n    color: #454545;\r\n    text-decoration: none;\r\n    font-size: 14px;\n}\n#ig-pics img{\r\n    width: 25%;\n}\n@media all and (max-width:750px){\n#centerlogo{\r\n        width: 50%;\n}\n#promobar{\r\n        text-align: center;\n}\n#promobar button{\r\n        float: none;\n}\n}\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\r\n  padding-top: 60px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#ribbon{\r\n    background-color: black;\r\n    padding-top: 60px;\r\n    padding-bottom: 60px;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    border-radius: 8px;\r\n    float: right;\n}\n#home_vid{\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\r\n    margin-bottom: 30px;\n}\n#about_us{\r\n    background-color: white;\r\n    padding-top:50px;\r\n    padding-bottom:50px;\n}\n#about_us h2{\r\n    margin-bottom: 20px;\r\n    line-height: 3.125rem;\r\n    color: #444;\n}\n#aboutus-txt p{\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: .2px;\n}\n#aboutus-img img{\r\n    width: 100%;\n}\n#team{\r\n    background-color: black;\r\n    color: white;\r\n    text-align: center;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    padding-top: 70px;\n}\n#team h1{\r\n    margin-bottom: 30px;\n}\n#team a{\r\n    color: #454545;\r\n    text-decoration: none;\r\n    font-size: 14px;\n}\n.ig_imgs img{\r\n    margin-top: 20px;\r\n    width: 100%;\n}\n@media all and (max-width:750px){\n#centerlogo{\r\n        width: 50%;\n}\n#promobar{\r\n        text-align: center;\n}\n#promobar button{\r\n        float: none;\n}\n}\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38370,6 +38388,32 @@ var render = function() {
                   )
                 ]
               )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row ig_imgs" }, [
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic01, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic02, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic03, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic04, alt: "" } })
+              ])
             ])
           ])
         ])

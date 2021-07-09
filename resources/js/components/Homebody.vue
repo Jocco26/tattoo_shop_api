@@ -69,18 +69,18 @@
                         </a>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row ig_imgs">
                     <div class="col-3">
-                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img :src="ig_pic01" alt=""></a>
                     </div>
                     <div class="col-3">
-                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img :src="ig_pic02" alt=""></a>
                     </div>
                     <div class="col-3">
-                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img :src="ig_pic03" alt=""></a>
                     </div>
                     <div class="col-3">
-                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img :src="ig_pic04" alt=""></a>
                     </div>
                 </div> 
             </div>
@@ -102,6 +102,10 @@
     export default {
         data(){
             return{
+                ig_pic01:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic01.jpg?raw=true',
+                ig_pic02:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic02.jpg?raw=true',
+                ig_pic03:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic03.jpg?raw=true',
+                ig_pic04:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic04.jpg?raw=true',
                 promo_amount: 20,
                 fb_icon:'https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png',
                 ig_icon:'http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png',
@@ -225,9 +229,12 @@
     font-size: 14px;
 }
 
-#ig-pics img{
-    width: 25%;
+.ig_imgs img{
+    margin-top: 20px;
+    width: 100%;
 }
+
+
 
 
 
