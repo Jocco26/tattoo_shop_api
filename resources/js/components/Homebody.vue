@@ -1,6 +1,6 @@
 <template>
     <div id="main_div" v-bind:style="{ backgroundImage: 'url(' + bg + ')'  }">
-        <section class="container" id="features" >
+        <section class="container" id="features">
                     <div class="DAlogo" id="logo1">
                         <h1 class="DAlogo"><img id="centerlogo" :src="logo"></h1>
                         <form action="booknow.php" method="get">
@@ -113,7 +113,7 @@
                 </div>  
             </div>
         </section>
-        <section>
+        <section id="contact">
             <div class="container contact-us">
                 <h1><b>Contact Us</b></h1>
                 <div class="row">
@@ -181,8 +181,6 @@
 
 
 <script>
-    import VueInstagram from 'vue-instagram';
-
     export default {
         data(){
             return{
@@ -356,12 +354,6 @@
     text-align: left;
     
 }
-
-.radio-div input[type=radio]{
-    background-color: blue;
-}
-
-
 
 .form button{
     margin-top: 20px;

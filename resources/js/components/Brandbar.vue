@@ -23,7 +23,7 @@
                         <a class="nav-link" href="#">SUPPLIES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">LOCATION</a>
+                        <a class="nav-link" href="#contact">LOCATION</a>
                     </li>
                     
                 </ul>
@@ -51,7 +51,12 @@
     }
 </script>
 <style>
+html{
+    scroll-behavior: smooth;
+}
+
 html, body{
+  
   height:100%;
   width:100%;
   font-family:'Poppins', sans-serif;
