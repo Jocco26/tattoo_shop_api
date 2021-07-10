@@ -82,7 +82,91 @@
                     <div class="col-3">
                         <a href=""><img :src="ig_pic04" alt=""></a>
                     </div>
-                </div> 
+                </div>
+                <div class="row ig_imgs">
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic05" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic06" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic07" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic08" alt=""></a>
+                    </div>
+                </div>
+                <div class="row ig_imgs">
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic09" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic10" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic11" alt=""></a>
+                    </div>
+                    <div class="col-3">
+                        <a href=""><img :src="ig_pic12" alt=""></a>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <section>
+            <div class="container contact-us">
+                <h1><b>Contact Us</b></h1>
+                <div class="row">
+                    <div class="col">
+                        <h6><b>BOOK AN APPOINMENT</b></h6>
+                        <div class="form">
+                            <form>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                </div>
+                            </div>   
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                <input type="number" class="form-control" id="cnum" placeholder="Contact number">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12">
+                                <input type="date" class="form-control" id="p_date" placeholder="Preferred Date">
+                                </div>
+                            </div>
+                            <div>   
+                                    <div  class="radio-div">
+                                        <span>Service</span>
+                                    </div>
+                                        <div  class="radio-div">
+                                        <input type="radio" id="t_service" name="light">
+                                        <label class="text" for="t_service">Tattoo</label>
+                                   </div>
+                                    <div  class="radio-div"> 
+                                        <input type="radio" id="t_service" name="light">
+                                        <label class="text" for="p_service">Piercing</label>
+                                    </div> 
+                            </div>
+                         
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Special Instruction"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-dark">Sumbit</button>   
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <h6><b>LOCATION</b></h6>
+                        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.0233183703053!2d121.07651653973024!3d14.669910722188467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ec83c708e9%3A0x17dc05be0cec2d85!2sDon%20Antonio%20Tattoo!5e0!3m2!1sen!2sph!4v1625864769409!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -106,10 +190,19 @@
                 ig_pic02:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic02.jpg?raw=true',
                 ig_pic03:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic03.jpg?raw=true',
                 ig_pic04:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic04.jpg?raw=true',
+                ig_pic05:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic05.jpg?raw=true',
+                ig_pic06:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic06.jpg?raw=true',
+                ig_pic07:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic07.jpg?raw=true',
+                ig_pic08:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic08.jpg?raw=true',
+                ig_pic09:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic09.jpg?raw=true',
+                ig_pic10:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic10.jpg?raw=true',
+                ig_pic11:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic11.jpg?raw=true',
+                ig_pic12:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic12.png?raw=true',
+
                 promo_amount: 20,
                 fb_icon:'https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png',
                 ig_icon:'http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png',
-                yt_icon:'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c545.png',
+                yt_icon:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/yt_icon.png?raw=true',
                 thumbnail:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/thumbnail01.JPG?raw=true',
                 thumbnail02:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/p_thumbnail01.JPG?raw=true',
                 video01:'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
@@ -231,8 +324,51 @@
 
 .ig_imgs img{
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
 }
+
+.contact-us{
+    font-family: 'OpenSans-Bold', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.contact-us h1{
+    margin:50px;
+}
+
+.form{
+    background-color: white;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    color: black;
+}
+
+.form input{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.radio-div{
+    text-align: left;
+    
+}
+
+.radio-div input[type=radio]{
+    background-color: blue;
+}
+
+
+
+.form button{
+    margin-top: 20px;
+}
+
+
+
 
 
 

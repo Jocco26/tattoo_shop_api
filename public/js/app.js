@@ -2006,6 +2006,90 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -2014,10 +2098,18 @@ __webpack_require__.r(__webpack_exports__);
       ig_pic02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic02.jpg?raw=true',
       ig_pic03: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic03.jpg?raw=true',
       ig_pic04: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic04.jpg?raw=true',
+      ig_pic05: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic05.jpg?raw=true',
+      ig_pic06: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic06.jpg?raw=true',
+      ig_pic07: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic07.jpg?raw=true',
+      ig_pic08: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic08.jpg?raw=true',
+      ig_pic09: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic09.jpg?raw=true',
+      ig_pic10: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic10.jpg?raw=true',
+      ig_pic11: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic11.jpg?raw=true',
+      ig_pic12: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/ig_pic12.png?raw=true',
       promo_amount: 20,
       fb_icon: 'https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png',
       ig_icon: 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c521.png',
-      yt_icon: 'http://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c545.png',
+      yt_icon: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/yt_icon.png?raw=true',
       thumbnail: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/thumbnail01.JPG?raw=true',
       thumbnail02: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/p_thumbnail01.JPG?raw=true',
       video01: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/720p%20-%20For%20the%20Love%20of%20Tattoo%20-%20YouTube%20(convert-video-online.com).mp4?raw=true',
@@ -6596,7 +6688,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\r\n  padding-top: 60px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#ribbon{\r\n    background-color: black;\r\n    padding-top: 60px;\r\n    padding-bottom: 60px;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    border-radius: 8px;\r\n    float: right;\n}\n#home_vid{\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\r\n    margin-bottom: 30px;\n}\n#about_us{\r\n    background-color: white;\r\n    padding-top:50px;\r\n    padding-bottom:50px;\n}\n#about_us h2{\r\n    margin-bottom: 20px;\r\n    line-height: 3.125rem;\r\n    color: #444;\n}\n#aboutus-txt p{\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: .2px;\n}\n#aboutus-img img{\r\n    width: 100%;\n}\n#team{\r\n    background-color: black;\r\n    color: white;\r\n    text-align: center;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    padding-top: 70px;\n}\n#team h1{\r\n    margin-bottom: 30px;\n}\n#team a{\r\n    color: #454545;\r\n    text-decoration: none;\r\n    font-size: 14px;\n}\n.ig_imgs img{\r\n    margin-top: 20px;\r\n    width: 100%;\n}\n@media all and (max-width:750px){\n#centerlogo{\r\n        width: 50%;\n}\n#promobar{\r\n        text-align: center;\n}\n#promobar button{\r\n        float: none;\n}\n}\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#main_div{\r\n    background-repeat: no-repeat;\r\n    background-attachment: fixed;\r\n    background-size: cover;\r\n    background-position:center;\n}\n#features{\r\n  min-height: 500px;\r\n  padding-top: 60px;\n}\n.DAlogo{\r\n    text-align:center;\n}\n#centerlogo{\r\n  width:25%;\n}\n#ribbon{\r\n    background-color: black;\r\n    padding-top: 60px;\r\n    padding-bottom: 60px;\n}\n#promobar{\r\n    background-color: black;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    font-weight: 500;\r\n    color:white;\r\n    font-size: 18px;\n}\n#promobar button{\r\n    background-color: #d87114;\r\n    border: none;\r\n    color: white;\r\n    padding: 15px 32px;\r\n    text-decoration: none;\r\n    display: inline-block;\r\n    font-size: 16px;\r\n    border-radius: 8px;\r\n    float: right;\n}\n#home_vid{\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    text-align: center;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-top:50px;\r\n    background: rgb(251, 252, 251, 0.55)\n}\n#home_vid h1{\r\n    margin-bottom: 50px;\n}\n#home_vid video{\r\n    width: 90%;\r\n    max-height: 90%;\r\n    margin-bottom: 30px;\n}\n#about_us{\r\n    background-color: white;\r\n    padding-top:50px;\r\n    padding-bottom:50px;\n}\n#about_us h2{\r\n    margin-bottom: 20px;\r\n    line-height: 3.125rem;\r\n    color: #444;\n}\n#aboutus-txt p{\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    letter-spacing: .2px;\n}\n#aboutus-img img{\r\n    width: 100%;\n}\n#team{\r\n    background-color: black;\r\n    color: white;\r\n    text-align: center;\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    padding-top: 70px;\n}\n#team h1{\r\n    margin-bottom: 30px;\n}\n#team a{\r\n    color: #454545;\r\n    text-decoration: none;\r\n    font-size: 14px;\n}\n.ig_imgs img{\r\n    margin-top: 20px;\r\n    margin-bottom: 20px;\r\n    width: 100%;\n}\n.contact-us{\r\n    font-family: 'OpenSans-Bold', sans-serif;\r\n    color: white;\r\n    text-align: center;\n}\n.contact-us h1{\r\n    margin:50px;\n}\n.form{\r\n    background-color: white;\r\n    padding-top: 100px;\r\n    padding-left: 50px;\r\n    padding-right: 50px;\r\n    padding-bottom: 30px;\r\n    color: black;\n}\n.form input{\r\n    margin-top: 20px;\r\n    margin-bottom: 20px;\n}\n.radio-div{\r\n    text-align: left;\n}\n.radio-div input[type=radio]{\r\n    background-color: blue;\n}\n.form button{\r\n    margin-top: 20px;\n}\n@media all and (max-width:750px){\n#centerlogo{\r\n        width: 50%;\n}\n#promobar{\r\n        text-align: center;\n}\n#promobar button{\r\n        float: none;\n}\n}\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38415,9 +38507,63 @@ var render = function() {
                 _c("img", { attrs: { src: _vm.ig_pic04, alt: "" } })
               ])
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row ig_imgs" }, [
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic05, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic06, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic07, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic08, alt: "" } })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row ig_imgs" }, [
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic09, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic10, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic11, alt: "" } })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-3" }, [
+              _c("a", { attrs: { href: "" } }, [
+                _c("img", { attrs: { src: _vm.ig_pic12, alt: "" } })
+              ])
+            ])
           ])
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _vm._m(4)
     ]
   )
 }
@@ -38468,6 +38614,135 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("h1", [_c("b", [_vm._v("Follow Us On Social Media")])])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("section", [
+      _c("div", { staticClass: "container contact-us" }, [
+        _c("h1", [_c("b", [_vm._v("Contact Us")])]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col" }, [
+            _c("h6", [_c("b", [_vm._v("BOOK AN APPOINMENT")])]),
+            _vm._v(" "),
+            _c("div", { staticClass: "form" }, [
+              _c("form", [
+                _c("div", { staticClass: "form-group row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "name", placeholder: "Name" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: { type: "text", id: "email", placeholder: "Email" }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "number",
+                        id: "cnum",
+                        placeholder: "Contact number"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group row" }, [
+                  _c("div", { staticClass: "col-md-12" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "date",
+                        id: "p_date",
+                        placeholder: "Preferred Date"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", [
+                  _c("div", { staticClass: "radio-div" }, [
+                    _c("span", [_vm._v("Service")])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "radio-div" }, [
+                    _c("input", {
+                      attrs: { type: "radio", id: "t_service", name: "light" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      { staticClass: "text", attrs: { for: "t_service" } },
+                      [_vm._v("Tattoo")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "radio-div" }, [
+                    _c("input", {
+                      attrs: { type: "radio", id: "t_service", name: "light" }
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "label",
+                      { staticClass: "text", attrs: { for: "p_service" } },
+                      [_vm._v("Piercing")]
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("textarea", {
+                    staticClass: "form-control",
+                    attrs: {
+                      id: "exampleFormControlTextarea1",
+                      rows: "3",
+                      placeholder: "Special Instruction"
+                    }
+                  })
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  { staticClass: "btn btn-dark", attrs: { type: "button" } },
+                  [_vm._v("Sumbit")]
+                )
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col" }, [
+            _c("h6", [_c("b", [_vm._v("LOCATION")])]),
+            _vm._v(" "),
+            _c("p", [
+              _c("iframe", {
+                staticStyle: { border: "0" },
+                attrs: {
+                  src:
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.0233183703053!2d121.07651653973024!3d14.669910722188467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ec83c708e9%3A0x17dc05be0cec2d85!2sDon%20Antonio%20Tattoo!5e0!3m2!1sen!2sph!4v1625864769409!5m2!1sen!2sph",
+                  width: "400",
+                  height: "300",
+                  allowfullscreen: "",
+                  loading: "lazy"
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
   }
 ]
 render._withStripped = true
