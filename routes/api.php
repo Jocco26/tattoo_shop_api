@@ -37,3 +37,6 @@ Route::put('/client', 'App\Http\Controllers\ClientController@store');
 //delete
 //Route::delete('clients','ClientController@destroy');
 Route::delete('/client/{id}', 'App\Http\Controllers\ClientController@destroy');
+
+//supplies
+Route::get('/supplies', 'App\Http\Controllers\SuppliesController@index');

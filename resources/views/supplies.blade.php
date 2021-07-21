@@ -17,8 +17,7 @@
     </head>
     <body class="antialiased">
         <div id="app">
-            <brandbar></brandbar>
-            <homebody></homebody> 
+            <suppliesbanner></suppliesbanner>
             <div class="container">
                 
             </div>

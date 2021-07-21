@@ -20,7 +20,7 @@
                         <a class="nav-link" href="#">BLOG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">SUPPLIES</a>
+                        <a class="nav-link" :href="url">SUPPLIES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">LOCATION</a>
@@ -41,13 +41,11 @@
     export default {
         data(){
             return{
+                url:'api/supplies',
                 message: 'hellow',
-                image: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/newlogo.png?raw=true',
-                
-                
-                
+                image: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/newlogo.png?raw=true',  
             }
-        }
+        },
     }
 </script>
 <style>
