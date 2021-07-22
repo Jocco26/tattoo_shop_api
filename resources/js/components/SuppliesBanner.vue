@@ -9,7 +9,7 @@
   
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown" v-for="category in supplies_categories" v-bind:key="category.id">
+      <li class="nav-item dropdown" v-for="category in categories" v-bind:key="category.id">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{category.name}}
         </a>
@@ -32,24 +32,20 @@ import axios from 'axios';
   export default{
     data(){
       return{
-        supplies_categories:[]
+        categories:[]
       }
     },
     created(){
-      this.SuppliesCategory();
+        this.SuppliesCategory();
     },
     methods:{
       SuppliesCategory(){
-        axios
-        .get('supplies/show')
-        .then((response) => {
-          console.log(response.data)
-          this.supplies_categories = response.data
-        })
-        .catch((erroe) => {
-          console.log(error)
-          this.errorMsg = 'Error retrieving data'
-        })
+        fetch('supplies/show')
+        .then(res => res.json())
+        .then(res => {
+            this.categories = res.data;
+            })
+        .catch(err => console.log(err));
       }
     }
   }

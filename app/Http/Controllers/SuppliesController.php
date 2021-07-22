@@ -21,9 +21,9 @@ class SuppliesController extends Controller
 
     public function loadSuppliesCategories()
     {
-        $supplies_categories = Supplies_Category::all();
+        $categories = Supplies_Category::all();
 
-        return SuppliesCategoryResource::collection($supplies_categories);
+        return SuppliesCategoryResource::collection($categories);
     }    
 
     /**

@@ -2167,7 +2167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      supplies_categories: []
+      categories: []
     };
   },
   created: function created() {
@@ -2177,12 +2177,12 @@ __webpack_require__.r(__webpack_exports__);
     SuppliesCategory: function SuppliesCategory() {
       var _this = this;
 
-      axios__WEBPACK_IMPORTED_MODULE_0___default().get('supplies/show').then(function (response) {
-        console.log(response.data);
-        _this.supplies_categories = response.data;
-      })["catch"](function (erroe) {
-        console.log(error);
-        _this.errorMsg = 'Error retrieving data';
+      fetch('supplies/show').then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        _this.categories = res.data;
+      })["catch"](function (err) {
+        return console.log(err);
       });
     }
   }
@@ -38927,7 +38927,7 @@ var render = function() {
           _c(
             "ul",
             { staticClass: "navbar-nav mr-auto" },
-            _vm._l(_vm.supplies_categories, function(category) {
+            _vm._l(_vm.categories, function(category) {
               return _c(
                 "li",
                 { key: category.id, staticClass: "nav-item dropdown" },
