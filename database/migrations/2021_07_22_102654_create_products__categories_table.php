@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class RecreateClientsTable extends Migration
+class CreateProductsCategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class RecreateClientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('clients', function (Blueprint $table) {
+        Schema::create('products__categories', function (Blueprint $table) {
             $table->id();
-            $table->string('First_name');
-            $table->text('Surname');
+            $table->string('name');
+            $table->unsignedBigInteger('supply_category_id');
             $table->timestamps();
+
+            $table->foreign('supply_category_id')->references('id')->on('supplies__categories');
         });
     }
 
@@ -28,6 +30,6 @@ class RecreateClientsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('clients');
+        Schema::dropIfExists('products__categories');
     }
 }

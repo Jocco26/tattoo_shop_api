@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Supplies_Category;
+use App\Http\Resources\Supplies_Category as SuppliesCategoryResource;
 
 class SuppliesController extends Controller
 {
@@ -14,7 +16,15 @@ class SuppliesController extends Controller
     public function index()
     {
         return view('supplies');
+
     }
+
+    public function loadSuppliesCategories()
+    {
+        $supplies_categories = Supplies_Category::all();
+
+        return SuppliesCategoryResource::collection($supplies_categories);
+    }    
 
     /**
      * Show the form for creating a new resource.

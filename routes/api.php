@@ -40,3 +40,5 @@ Route::delete('/client/{id}', 'App\Http\Controllers\ClientController@destroy');
 
 //supplies
 Route::get('/supplies', 'App\Http\Controllers\SuppliesController@index');
+
+Route::get('/supplies/show', 'App\Http\Controllers\SuppliesController@loadSuppliesCategories');
