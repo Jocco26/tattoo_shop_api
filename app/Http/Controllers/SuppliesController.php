@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Supplies_Category;
+use App\Models\Products_Category;
 use App\Http\Resources\Supplies_Category as SuppliesCategoryResource;
+use App\Http\Resources\Products_Category as ProductsCategoryResource;
 
 class SuppliesController extends Controller
 {
@@ -24,6 +26,13 @@ class SuppliesController extends Controller
         $categories = Supplies_Category::all();
 
         return SuppliesCategoryResource::collection($categories);
+    }
+    
+    public function loadProductsCategories()
+    {
+        $categories02 = Products_Category::all();
+
+        return ProductsCategoryResource::collection($categories02);
     }    
 
     /**

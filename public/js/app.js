@@ -2160,18 +2160,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      categories: []
+      categories: [],
+      categories02: []
     };
   },
   created: function created() {
     this.SuppliesCategory();
+    this.ProductCategory();
   },
   methods: {
     SuppliesCategory: function SuppliesCategory() {
@@ -2181,6 +2180,17 @@ __webpack_require__.r(__webpack_exports__);
         return res.json();
       }).then(function (res) {
         _this.categories = res.data;
+      })["catch"](function (err) {
+        return console.log(err);
+      });
+    },
+    ProductCategory: function ProductCategory() {
+      var _this2 = this;
+
+      fetch('supplies/show02').then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        _this2.categories02 = res.data;
       })["catch"](function (err) {
         return console.log(err);
       });
@@ -38954,7 +38964,29 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _vm._m(1, true)
+                  _c(
+                    "div",
+                    {
+                      staticClass: "dropdown-menu",
+                      attrs: { "aria-labelledby": "navbarDropdown" }
+                    },
+                    _vm._l(_vm.categories02, function(category02) {
+                      return _c(
+                        "a",
+                        {
+                          key: category02.id,
+                          staticClass: "dropdown-item",
+                          attrs: { href: "#" }
+                        },
+                        [
+                          (category02.supply_category_id = category.id)
+                            ? _c("p", [_vm._v(_vm._s(category02.name))])
+                            : _vm._e()
+                        ]
+                      )
+                    }),
+                    0
+                  )
                 ]
               )
             }),
@@ -38981,33 +39013,6 @@ var staticRenderFns = [
         }
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "dropdown-menu",
-        attrs: { "aria-labelledby": "navbarDropdown" }
-      },
-      [
-        _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-          _vm._v("Action")
-        ]),
-        _vm._v(" "),
-        _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-          _vm._v("Another action")
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "dropdown-divider" }),
-        _vm._v(" "),
-        _c("a", { staticClass: "dropdown-item", attrs: { href: "#" } }, [
-          _vm._v("Something else here")
-        ])
-      ]
     )
   }
 ]
