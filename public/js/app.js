@@ -2173,6 +2173,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -6801,9 +6828,8 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n*{\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Poppins', sans-serif;\n}\nnav{\r\n  position: fixed;\r\n  z-index: 99;\r\n  width: 100%;\r\n  \r\n  background: #242526;\n}\nnav .wrapper{\r\n  position: relative;\r\n  max-width: 1300px;\r\n  padding: 0px 30px;\r\n  height: 70px;\r\n  line-height: 70px;\r\n  margin: auto;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\n}\n.wrapper .logo a{\r\n  color: #f2f2f2;\r\n  font-size: 30px;\r\n  font-weight: 600;\r\n  text-decoration: none;\n}\n.wrapper .nav-links{\r\n  display: inline-flex;\n}\n.nav-links li{\r\n  list-style: none;\n}\n.nav-links li a{\r\n  color: #f2f2f2;\r\n  text-decoration: none;\r\n  font-size: 18px;\r\n  font-weight: 500;\r\n  padding: 9px 15px;\r\n  border-radius: 5px;\r\n  transition: all 0.3s ease;\n}\n.nav-links li a:hover{\r\n  background: #3A3B3C;\n}\n.nav-links .mobile-item{\r\n  display: none;\n}\n.nav-links .drop-menu{\r\n  position: absolute;\r\n  background: #242526;\r\n  width: 180px;\r\n  line-height: 45px;\r\n  top: 85px;\r\n  opacity: 0;\r\n  visibility: hidden;\r\n  box-shadow: 0 6px 10px rgba(0,0,0,0.15);\n}\n.nav-links li:hover .drop-menu,\r\n.nav-links li:hover .mega-box{\r\n  transition: all 0.3s ease;\r\n  top: 70px;\r\n  opacity: 1;\r\n  visibility: visible;\n}\n.drop-menu li a{\r\n  width: 100%;\r\n  display: block;\r\n  padding: 0 0 0 15px;\r\n  font-weight: 400;\r\n  border-radius: 0px;\n}\n.mega-box{\r\n  position: absolute;\r\n  left: 0;\r\n  width: 100%;\r\n  padding: 0 30px;\r\n  top: 85px;\r\n  opacity: 0;\r\n  visibility: hidden;\n}\n.mega-box .content{\r\n  background: #242526;\r\n  padding: 25px 20px;\r\n  display: flex;\r\n  width: 100%;\r\n  justify-content: space-between;\r\n  box-shadow: 0 6px 10px rgba(0,0,0,0.15);\n}\n.mega-box .content .row{\r\n  width: calc(25% - 30px);\r\n  line-height: 45px;\n}\n.content .row img{\r\n  width: 100%;\r\n  height: 100%;\r\n  -o-object-fit: cover;\r\n     object-fit: cover;\n}\n.content .row header{\r\n  color: #f2f2f2;\r\n  font-size: 20px;\r\n  font-weight: 500;\n}\n.content .row .mega-links{\r\n  margin-left: -40px;\r\n  border-left: 1px solid rgba(255,255,255,0.09);\n}\n.row .mega-links li{\r\n  padding: 0 20px;\n}\n.row .mega-links li a{\r\n  padding: 0px;\r\n  padding: 0 20px;\r\n  color: #d9d9d9;\r\n  font-size: 17px;\r\n  display: block;\n}\n.row .mega-links li a:hover{\r\n  color: #f2f2f2;\n}\n.wrapper .btn{\r\n  color: #fff;\r\n  font-size: 20px;\r\n  cursor: pointer;\r\n  display: none;\n}\n.wrapper .btn.close-btn{\r\n  position: absolute;\r\n  right: 30px;\r\n  top: 10px;\n}\n@media screen and (max-width: 970px) {\n.wrapper .btn{\r\n    display: block;\n}\n.wrapper .nav-links{\r\n    position: fixed;\r\n    height: 100vh;\r\n    width: 100%;\r\n    max-width: 350px;\r\n    top: 0;\r\n    left: -100%;\r\n    background: #242526;\r\n    display: block;\r\n    padding: 50px 10px;\r\n    line-height: 50px;\r\n    overflow-y: auto;\r\n    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);\r\n    transition: all 0.3s ease;\n}\r\n  /* custom scroll bar */\n::-webkit-scrollbar {\r\n    width: 10px;\n}\n::-webkit-scrollbar-track {\r\n    background: #242526;\n}\n::-webkit-scrollbar-thumb {\r\n    background: #3A3B3C;\n}\n#menu-btn:checked ~ .nav-links{\r\n    left: 0%;\n}\n#menu-btn:checked ~ .btn.menu-btn{\r\n    display: none;\n}\n#close-btn:checked ~ .btn.menu-btn{\r\n    display: block;\n}\n.nav-links li{\r\n    margin: 15px 10px;\n}\n.nav-links li a{\r\n    padding: 0 20px;\r\n    display: block;\r\n    font-size: 20px;\n}\n.nav-links .drop-menu{\r\n    position: static;\r\n    opacity: 1;\r\n    top: 65px;\r\n    visibility: visible;\r\n    padding-left: 20px;\r\n    width: 100%;\r\n    max-height: 0px;\r\n    overflow: hidden;\r\n    box-shadow: none;\r\n    transition: all 0.3s ease;\n}\n#showDrop:checked ~ .drop-menu,\r\n  #showMega:checked ~ .mega-box{\r\n    max-height: 100%;\n}\n.nav-links .desktop-item{\r\n    display: none;\n}\n.nav-links .mobile-item{\r\n    display: block;\r\n    color: #f2f2f2;\r\n    font-size: 20px;\r\n    font-weight: 500;\r\n    padding-left: 20px;\r\n    cursor: pointer;\r\n    border-radius: 5px;\r\n    transition: all 0.3s ease;\n}\n.nav-links .mobile-item:hover{\r\n    background: #3A3B3C;\n}\n.drop-menu li{\r\n    margin: 0;\n}\n.drop-menu li a{\r\n    border-radius: 5px;\r\n    font-size: 18px;\n}\n.mega-box{\r\n    position: static;\r\n    top: 65px;\r\n    opacity: 1;\r\n    visibility: visible;\r\n    padding: 0 20px;\r\n    max-height: 0px;\r\n    overflow: hidden;\r\n    transition: all 0.3s ease;\n}\n.mega-box .content{\r\n    box-shadow: none;\r\n    flex-direction: column;\r\n    padding: 20px 20px 0 20px;\n}\n.mega-box .content .row{\r\n    width: 100%;\r\n    margin-bottom: 15px;\r\n    border-top: 1px solid rgba(255,255,255,0.08);\n}\n.mega-box .content .row:nth-child(1),\r\n  .mega-box .content .row:nth-child(2){\r\n    border-top: 0px;\n}\n.content .row .mega-links{\r\n    border-left: 0px;\r\n    padding-left: 15px;\n}\n.row .mega-links li{\r\n    margin: 0;\n}\n.content .row header{\r\n    font-size: 19px;\n}\n}\nnav input{\r\n  display: none;\n}\n.body-text{\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n  width: 100%;\r\n  text-align: center;\r\n  padding: 0 30px;\n}\n.body-text div{\r\n  font-size: 45px;\r\n  font-weight: 600;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nbody{\n    margin: 0;\n    padding: 0;\n}\n#spaces{\n  background-color: black;\n}\n.menu-area{\n    position: static;\n}\n.mega-area{\n    position: absolute;\n    width: 100%;\n    left: 0;\n    right: 0;\n    top: 86px;\n}\n.dropdown-item{\n    padding: 5px 0;\n}\n.dropdown:hover .dropdown-menu {\n    display: block;\n    margin-top: 0;\n}\n.carousel-item {\n  height: 35em;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39003,79 +39029,156 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("nav", [
-      _c("div", { staticClass: "wrapper" }, [
-        _c("div", { staticClass: "logo" }, [
-          _c("a", { attrs: { href: "#" } }, [
-            _c("img", { attrs: { src: "../storage/images/newlogo.png" } })
+    _c("div", { attrs: { id: "spaces" } }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c(
+              "nav",
+              {
+                staticClass: "navbar navbar-expand-lg navbar-dark bg-black",
+                attrs: { id: "awit02" }
+              },
+              [
+                _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+                  _c("img", { attrs: { src: "../storage/images/newlogo.png" } })
+                ]),
+                _vm._v(" "),
+                _vm._m(0),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "collapse navbar-collapse justify-content-center",
+                    attrs: { id: "navbar" }
+                  },
+                  [
+                    _c(
+                      "ul",
+                      { staticClass: "navbar-nav" },
+                      _vm._l(_vm.categories, function(category) {
+                        return _c(
+                          "li",
+                          {
+                            key: category.id,
+                            staticClass: "nav-item dropdown menu-area"
+                          },
+                          [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "nav-link dropdown-toggle",
+                                attrs: {
+                                  href: "#",
+                                  id: "mega-one",
+                                  "data-toggle": "dropdown",
+                                  "aria-haspopup": "true",
+                                  "aria-expanded": "false"
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\r\n                    " +
+                                    _vm._s(category.name) +
+                                    "\r\n                  "
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass: "dropdown-menu mega-area",
+                                attrs: { "aria-labelledby": "mega-one" }
+                              },
+                              [
+                                _c("div", { staticClass: "row" }, [
+                                  _c(
+                                    "div",
+                                    { staticClass: "col-sm-6 col-lg-3" },
+                                    _vm._l(_vm.categories02, function(
+                                      category02
+                                    ) {
+                                      return _c("div", { key: category02.id }, [
+                                        category02.supply_category_id ==
+                                        category.id
+                                          ? _c(
+                                              "a",
+                                              {
+                                                staticClass: "dropdown-item",
+                                                attrs: { href: "#" }
+                                              },
+                                              [_vm._v(_vm._s(category02.name))]
+                                            )
+                                          : _vm._e()
+                                      ])
+                                    }),
+                                    0
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        )
+                      }),
+                      0
+                    )
+                  ]
+                )
+              ]
+            )
+          ])
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "carousel slide",
+        attrs: { id: "carouselExampleIndicators", "data-ride": "carousel" }
+      },
+      [
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "carousel-inner" }, [
+          _c("div", { staticClass: "carousel-item active" }, [
+            _c("img", {
+              staticClass: "d-block w-100 h-100",
+              attrs: {
+                src: "../storage/images/slide01.jpg",
+                alt: "First slide"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "carousel-item" }, [
+            _c("img", {
+              staticClass: "d-block w-100 h-100",
+              attrs: {
+                src: "../storage/images/slide04.jpg",
+                alt: "Second slide"
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "carousel-item" }, [
+            _c("img", {
+              staticClass: "d-block w-100 h-100",
+              attrs: {
+                src: "../storage/images/slide06.jpg",
+                alt: "Third slide"
+              }
+            })
           ])
         ]),
         _vm._v(" "),
-        _c("input", {
-          attrs: { type: "radio", name: "slider", id: "menu-btn" }
-        }),
+        _vm._m(2),
         _vm._v(" "),
-        _c("input", {
-          attrs: { type: "radio", name: "slider", id: "close-btn" }
-        }),
-        _vm._v(" "),
-        _c(
-          "ul",
-          { staticClass: "nav-links" },
-          [
-            _vm._m(0),
-            _vm._v(" "),
-            _vm._l(_vm.categories, function(category) {
-              return _c("li", { key: category.id }, [
-                _c("a", { staticClass: "desktop-item", attrs: { href: "#" } }, [
-                  _vm._v(_vm._s(category.name))
-                ]),
-                _vm._v(" "),
-                _c("input", { attrs: { type: "checkbox", id: "showMega" } }),
-                _vm._v(" "),
-                _c(
-                  "label",
-                  { staticClass: "mobile-item", attrs: { for: "showMega" } },
-                  [_vm._v(_vm._s(category.name))]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "mega-box" }, [
-                  _c("div", { staticClass: "content" }, [
-                    _c("div", { staticClass: "row" }, [
-                      _c(
-                        "ul",
-                        { staticClass: "mega-links" },
-                        _vm._l(_vm.categories02, function(category02) {
-                          return _c(
-                            "div",
-                            { key: category02.id, staticClass: "container" },
-                            [
-                              category02.supply_category_id == category.id
-                                ? _c("li", [
-                                    _c("a", { attrs: { href: "#" } }, [
-                                      _vm._v(_vm._s(category02.name))
-                                    ])
-                                  ])
-                                : _vm._e()
-                            ]
-                          )
-                        }),
-                        0
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _vm._m(1, true)
-                  ])
-                ])
-              ])
-            })
-          ],
-          2
-        ),
-        _vm._v(" "),
-        _vm._m(2)
-      ])
-    ])
+        _vm._m(3)
+      ]
+    )
   ])
 }
 var staticRenderFns = [
@@ -39084,17 +39187,47 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "label",
-      { staticClass: "btn close-btn", attrs: { for: "close-btn" } },
-      [_c("i", { staticClass: "fas fa-times" })]
+      "button",
+      {
+        staticClass: "navbar-toggler",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#navbar",
+          "aria-controls": "navbars",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation"
+        }
+      },
+      [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c("img", { attrs: { src: "img.jpg", alt: "" } })
+    return _c("ol", { staticClass: "carousel-indicators" }, [
+      _c("li", {
+        staticClass: "active",
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "0"
+        }
+      }),
+      _vm._v(" "),
+      _c("li", {
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "1"
+        }
+      }),
+      _vm._v(" "),
+      _c("li", {
+        attrs: {
+          "data-target": "#carouselExampleIndicators",
+          "data-slide-to": "2"
+        }
+      })
     ])
   },
   function() {
@@ -39102,9 +39235,47 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c(
-      "label",
-      { staticClass: "btn menu-btn", attrs: { for: "menu-btn" } },
-      [_c("i", { staticClass: "fas fa-bars" })]
+      "a",
+      {
+        staticClass: "carousel-control-prev",
+        attrs: {
+          href: "#carouselExampleIndicators",
+          role: "button",
+          "data-slide": "prev"
+        }
+      },
+      [
+        _c("span", {
+          staticClass: "carousel-control-prev-icon",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "sr-only" }, [_vm._v("Previous")])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass: "carousel-control-next",
+        attrs: {
+          href: "#carouselExampleIndicators",
+          role: "button",
+          "data-slide": "next"
+        }
+      },
+      [
+        _c("span", {
+          staticClass: "carousel-control-next-icon",
+          attrs: { "aria-hidden": "true" }
+        }),
+        _vm._v(" "),
+        _c("span", { staticClass: "sr-only" }, [_vm._v("Next")])
+      ]
     )
   }
 ]
