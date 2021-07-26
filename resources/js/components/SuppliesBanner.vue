@@ -115,6 +115,8 @@ import axios from 'axios';
 }
 .mega-area{
     position: absolute;
+    padding-left:100px;
+    padding-right:100px;
     width: 100%;
     left: 0;
     right: 0;
