@@ -116,8 +116,8 @@
         <section id="contact">
             <div class="container contact-us">
                 <h1><b>Contact Us</b></h1>
-                <div class="row">
-                    <div class="col">
+                <div id="form-row" class="row">
+                    <div class="col-md-6 col-sm-12">
                         <h6><b>BOOK AN APPOINMENT</b></h6>
                         <div class="form">
                             <form>
@@ -162,9 +162,9 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 col-sm-12">
                         <h6><b>LOCATION</b></h6>
-                        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.0233183703053!2d121.07651653973024!3d14.669910722188467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ec83c708e9%3A0x17dc05be0cec2d85!2sDon%20Antonio%20Tattoo!5e0!3m2!1sen!2sph!4v1625864769409!5m2!1sen!2sph" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+                        <p><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.0233183703053!2d121.07651653973024!3d14.669910722188467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ec83c708e9%3A0x17dc05be0cec2d85!2sDon%20Antonio%20Tattoo!5e0!3m2!1sen!2sph!4v1625864769409!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
                     </div>
                 </div>
             </div>
@@ -337,6 +337,7 @@
 }
 
 .form{
+    width: 100%;
     background-color: white;
     padding-top: 100px;
     padding-left: 50px;
@@ -357,6 +358,13 @@
 
 .form button{
     margin-top: 20px;
+}
+
+
+
+#map{
+    width: 300px;
+    height: 300px;
 }
 
 
