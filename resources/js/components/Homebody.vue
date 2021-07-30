@@ -360,9 +360,7 @@
     margin-top: 20px;
 }
 
-#location{
-    padding-top: 50px;
-}
+
 
 #map{
     width: 300px;
@@ -388,6 +386,10 @@
     #promobar button{
         float: none;
     }
+
+    #location{
+    padding-top: 50px;
+}
 }
 
 
