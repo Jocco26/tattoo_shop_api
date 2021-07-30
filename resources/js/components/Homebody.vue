@@ -170,10 +170,9 @@
             </div>
         </section>
         
-        <!--<section>
-            <div class="container" id="ig-pics">
-            </div>
-        </section>-->  
+        <footer>
+            <p class="text-center">Don Antonio Copyright ©:2021</p>
+        </footer>
     </div>
     
 </template>
@@ -330,6 +329,7 @@
     font-family: 'OpenSans-Bold', sans-serif;
     color: white;
     text-align: center;
+    margin-bottom: 50px;
 }
 
 .contact-us h1{
@@ -365,6 +365,12 @@
 #map{
     width: 300px;
     height: 300px;
+}
+
+footer{
+    padding: 30px;
+    color: white;
+    background-color: black;
 }
 
 
