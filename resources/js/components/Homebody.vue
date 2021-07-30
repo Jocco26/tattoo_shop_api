@@ -164,7 +164,7 @@
                     </div>
                     <div class="col">
                         <h6><b>LOCATION</b></h6>
-                        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.0233183703053!2d121.07651653973024!3d14.669910722188467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ec83c708e9%3A0x17dc05be0cec2d85!2sDon%20Antonio%20Tattoo!5e0!3m2!1sen!2sph!4v1625864769409!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+                        <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2295.0233183703053!2d121.07651653973024!3d14.669910722188467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7ec83c708e9%3A0x17dc05be0cec2d85!2sDon%20Antonio%20Tattoo!5e0!3m2!1sen!2sph!4v1625864769409!5m2!1sen!2sph" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
                     </div>
                 </div>
             </div>
