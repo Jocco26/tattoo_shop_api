@@ -1884,6 +1884,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -1891,6 +1902,14 @@ __webpack_require__.r(__webpack_exports__);
       message: 'hellow',
       image: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/newlogo.png?raw=true'
     };
+  },
+  mounted: function mounted() {
+    this.openModal();
+  },
+  methods: {
+    openModal: function openModal() {
+      $('#welcomeModal').modal('show');
+    }
   }
 });
 
@@ -6781,7 +6800,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nhtml{\r\n    scroll-behavior: smooth;\n}\nhtml, body{\r\n  \r\n  height:100%;\r\n  width:100%;\r\n  font-family:'Poppins', sans-serif;\r\n  color:#222;\n}\n.navbar{\r\n  background-color: black;\n}\nul {\r\n  width: 70%;\r\n  margin: auto;\n}\n.navbar-nav li{\r\n  padding-right:20px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nhtml{\r\n    scroll-behavior: smooth;\n}\nhtml, body{\r\n  \r\n  height:100%;\r\n  width:100%;\r\n  font-family:'Poppins', sans-serif;\r\n  color:#222;\n}\n.navbar{\r\n  background-color: black;\n}\nul {\r\n  width: 70%;\r\n  margin: auto;\n}\n.navbar-nav li{\r\n  padding-right:20px;\n}\n#welcomeModal{\r\n    text-align: center;\r\n    color: white;\n}\n.modal-content{\r\n    background-color: #7A7771;\r\n    border:orange 2px solid;\n}\n#welcomeModal h1{\r\n    color: orange;\n}\n.modal-body a{\r\n    color:white;\n}\n#welcomeModal button{\r\n    margin: auto;\r\n    margin-bottom: 30px;\r\n    padding-left: 30px;\r\n    padding-right: 30px;\r\n    background-color: orange;\r\n    color: white;\r\n    border: none;\n}\n#welcomeModal button:hover{\r\n    background-color: black;\n}\r\n\r\n\r\n\r\n\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -38542,7 +38561,9 @@ var render = function() {
           )
         ])
       ]
-    )
+    ),
+    _vm._v(" "),
+    _vm._m(5)
   ])
 }
 var staticRenderFns = [
@@ -38602,6 +38623,51 @@ var staticRenderFns = [
         _vm._v("LOCATION")
       ])
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      {
+        staticClass: "modal",
+        attrs: { id: "welcomeModal", tabindex: "-1", role: "dialog" }
+      },
+      [
+        _c(
+          "div",
+          { staticClass: "modal-dialog", attrs: { role: "document" } },
+          [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-body" }, [
+                _c("h1", [
+                  _c("b", [_vm._v("WELCOME"), _c("br"), _vm._v("TO MY SITE")])
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("This website is a sample project created by"),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("a", { attrs: { href: "https://github.com/Jocco26" } }, [
+                    _c("b", [_vm._v("Julius Ceasar Mag-abo")])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-light",
+                  attrs: { type: "button", "data-dismiss": "modal" }
+                },
+                [_vm._v("Okay")]
+              )
+            ])
+          ]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
