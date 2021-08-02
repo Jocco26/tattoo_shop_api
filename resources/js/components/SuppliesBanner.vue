@@ -13,10 +13,12 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbar">
               <ul class="navbar-nav">
                 <li class="nav-item dropdown menu-area" v-for="category in categories" v-bind:key="category.id">
+                 
                   <a class="nav-link dropdown-toggle" href="#" id="mega-one"
                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     {{category.name}}
-                  </a> 
+                  </a>
+ 
                   <div class="dropdown-menu mega-area" aria-labelledby="mega-one">
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
@@ -110,6 +112,8 @@ import axios from 'axios';
 }
 
 
+
+
 .menu-area{
     position: static;
 }
@@ -120,17 +124,22 @@ import axios from 'axios';
     width: 100%;
     left: 0;
     right: 0;
-    top: 86px;
+    top: 64px;
   
 }
 .dropdown-item{
     padding: 5px 0;
 }
 
-.dropdown:hover .dropdown-menu {
+
+
+.navbar-nav li:hover .dropdown-menu {
     display: block;
     margin-top: 0;
  }
+
+ 
+
 
 .carousel-item {
   height: 35em;
