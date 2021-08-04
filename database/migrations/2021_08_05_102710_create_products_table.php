@@ -18,10 +18,12 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('brand_id');
             $table->string('image');
             $table->timestamps();
-
+            
             $table->foreign('category_id')->references('id')->on('products__categories');
+            $table->foreign('brand_id')->references('id')->on('brands');
         });
     }
 

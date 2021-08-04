@@ -19,6 +19,7 @@
     <body class="antialiased">
         <div id="app">
             <suppliesbanner></suppliesbanner>
+            <suppliesbody></suppliesbody>
             <div class="container">
                 
             </div>

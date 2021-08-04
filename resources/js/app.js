@@ -23,6 +23,7 @@ window.Vue = require('vue').default;
 Vue.component('brandbar', require('./components/Brandbar.vue').default);
 Vue.component('homebody', require('./components/Homebody.vue').default);
 Vue.component('suppliesbanner', require('./components/SuppliesBanner.vue').default);
+Vue.component('suppliesbody', require('./components/SuppliesBody.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
