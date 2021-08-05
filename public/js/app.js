@@ -2197,6 +2197,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      brand: {
+        id: ''
+      },
       categories: [],
       categories02: []
     };
@@ -2227,7 +2230,8 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"](function (err) {
         return console.log(err);
       });
-    }
+    },
+    Showbrand: function Showbrand() {}
   }
 });
 
@@ -39352,7 +39356,14 @@ var render = function() {
                                               "a",
                                               {
                                                 staticClass: "dropdown-item",
-                                                attrs: { href: "#" }
+                                                attrs: { href: "#" },
+                                                on: {
+                                                  click: function($event) {
+                                                    return _vm.Showbrand(
+                                                      _vm.brand.id
+                                                    )
+                                                  }
+                                                }
                                               },
                                               [_vm._v(_vm._s(category02.name))]
                                             )

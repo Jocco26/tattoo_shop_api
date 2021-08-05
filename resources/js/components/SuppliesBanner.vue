@@ -23,7 +23,7 @@
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
                         <div v-for="category02 in categories02" v-bind:key="category02.id">
-                            <a v-if="category02.supply_category_id == category.id" href="#" class="dropdown-item">{{ category02.name }}</a>
+                            <a v-if="category02.supply_category_id == category.id" href="#" class="dropdown-item" @click="Showbrand(brand.id)">{{ category02.name }}</a>
                         </div>
                       </div>
                     </div>  
@@ -44,6 +44,9 @@ import axios from 'axios';
   export default{
     data(){
       return{
+        brand:{
+          id:''
+        },
         categories:[],
         categories02:[]
       }
@@ -68,6 +71,9 @@ import axios from 'axios';
             this.categories02 = res.data;
             })
         .catch(err => console.log(err));
+      },
+      Showbrand(){
+
       }
     }
   }

@@ -41,5 +41,8 @@ Route::delete('/client/{id}', 'App\Http\Controllers\ClientController@destroy');
 //supplies
 Route::get('/supplies', 'App\Http\Controllers\SuppliesController@index');
 
+//loading navbar and mega menu items for supplies
 Route::get('/supplies/show', 'App\Http\Controllers\SuppliesController@loadSuppliesCategories');
 Route::get('/supplies/show02', 'App\Http\Controllers\SuppliesController@loadProductsCategories');
+
+Route::get('/supplies/brands/{id}', 'App\Http\Controllers\SuppliesController@loadBrands');
