@@ -2197,9 +2197,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      brand: {
-        id: ''
-      },
       categories: [],
       categories02: []
     };
@@ -2231,7 +2228,9 @@ __webpack_require__.r(__webpack_exports__);
         return console.log(err);
       });
     },
-    Showbrand: function Showbrand() {}
+    Showbrand: function Showbrand(id) {
+      window.location.href = "/supplies/brands?q=".concat(id);
+    }
   }
 });
 

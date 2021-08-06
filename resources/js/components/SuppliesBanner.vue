@@ -44,9 +44,6 @@ import axios from 'axios';
   export default{
     data(){
       return{
-        brand:{
-          id:''
-        },
         categories:[],
         categories02:[]
       }
@@ -72,8 +69,8 @@ import axios from 'axios';
             })
         .catch(err => console.log(err));
       },
-      Showbrand(){
-
+      Showbrand(id){
+        window.location.href = `/supplies/brands?q=${id}`;
       }
     }
   }
