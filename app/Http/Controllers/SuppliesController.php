@@ -35,8 +35,8 @@ class SuppliesController extends Controller
         return ProductsCategoryResource::collection($categories02);
     }
     
-    public function loadBrand(){
-        return view('brand');
+    public function loadBrands(){
+        return view('brands');
     }
 
     /**

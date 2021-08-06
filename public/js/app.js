@@ -2197,6 +2197,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      url: 'supplies/brands?q=',
       categories: [],
       categories02: []
     };
@@ -2229,7 +2230,7 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     Showbrand: function Showbrand(id) {
-      window.location.href = "/supplies/brands?q=".concat(id);
+      window.location.href = "supplies/brands?q=".concat(id);
     }
   }
 });
@@ -39355,13 +39356,10 @@ var render = function() {
                                               "a",
                                               {
                                                 staticClass: "dropdown-item",
-                                                attrs: { href: "#" },
-                                                on: {
-                                                  click: function($event) {
-                                                    return _vm.Showbrand(
-                                                      _vm.brand.id
-                                                    )
-                                                  }
+                                                attrs: {
+                                                  href:
+                                                    _vm.url +
+                                                    category02.supply_category_id
                                                 }
                                               },
                                               [_vm._v(_vm._s(category02.name))]
