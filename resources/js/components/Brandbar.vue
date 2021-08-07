@@ -38,7 +38,7 @@
                 <div class="modal-content">
                 <div class="modal-body">
                     <h1><b>WELCOME<br>TO MY SITE</b></h1>
-                    <p>This website is a sample project created by<br> <a href="https://github.com/Jocco26"><b>Julius Ceasar Mag-abo</b></a></p>
+                    <p>This website is a sample project created by<br> <a href="https://github.com/Jocco26"><b>Julius Ceasar A. Mag-abo</b></a></p>
                 </div>
                     <button type="button" class="btn btn-light" data-dismiss="modal">Okay</button>
                 </div>
