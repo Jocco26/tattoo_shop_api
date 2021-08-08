@@ -38818,7 +38818,7 @@ var staticRenderFns = [
                   _c("br"),
                   _vm._v(" "),
                   _c("a", { attrs: { href: "https://github.com/Jocco26" } }, [
-                    _c("b", [_vm._v("Julius Ceasar Mag-abo")])
+                    _c("b", [_vm._v("Julius Ceasar A. Mag-abo")])
                   ])
                 ])
               ]),
