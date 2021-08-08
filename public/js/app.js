@@ -2197,7 +2197,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      url: 'supplies/brands?q=',
+      url: '/api/somebrand',
       categories: [],
       categories02: []
     };
@@ -39356,11 +39356,7 @@ var render = function() {
                                               "a",
                                               {
                                                 staticClass: "dropdown-item",
-                                                attrs: {
-                                                  href:
-                                                    _vm.url +
-                                                    category02.supply_category_id
-                                                }
+                                                attrs: { href: _vm.url }
                                               },
                                               [_vm._v(_vm._s(category02.name))]
                                             )

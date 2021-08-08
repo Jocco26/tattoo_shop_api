@@ -23,7 +23,7 @@
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
                         <div v-for="category02 in categories02" v-bind:key="category02.id">
-                            <a v-if="category02.supply_category_id == category.id" class="dropdown-item" :href="url+category02.supply_category_id">{{ category02.name }}</a>
+                            <a v-if="category02.supply_category_id == category.id" class="dropdown-item" :href="url">{{ category02.name }}</a>
                         </div>
                       </div>
                     </div>  
@@ -44,7 +44,7 @@ import axios from 'axios';
   export default{
     data(){
       return{
-        url:'supplies/brands?q=',
+        url:'/api/somebrand',
         categories:[],
         categories02:[]
       }

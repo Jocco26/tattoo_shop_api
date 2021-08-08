@@ -46,3 +46,13 @@ Route::get('/supplies/show', 'App\Http\Controllers\SuppliesController@loadSuppli
 Route::get('/supplies/show02', 'App\Http\Controllers\SuppliesController@loadProductsCategories');
 
 Route::get('/supplies/brands', 'App\Http\Controllers\SuppliesController@loadBrands');
+
+
+//layout testing
+Route::get('/brands',function(){
+    return view('brands');
+});
+
+Route::get('/somebrand',function(){
+    return view('test');
+});
