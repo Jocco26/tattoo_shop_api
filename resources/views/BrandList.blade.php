@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('title','some brands')
 @section('content')
-<div class="container">
-    <h5>this is a brand</h5>
-</div>
+    
+    <brandlist-component :passed_data={{$brand_id}}></brandlist-component>
 @endsection

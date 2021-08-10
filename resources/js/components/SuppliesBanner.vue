@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-12">
          <nav id="awit02" class="navbar navbar-expand-lg navbar-dark bg-black">
-            <a class="navbar-brand" href="#"><img :src="'../storage/images/newlogo.png'"></a>
+            <a class="navbar-brand" href="#"><img :src="image"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" 
             aria-controls="navbars" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
                     <div class="row">
                       <div class="col-sm-6 col-lg-3">
                         <div v-for="category02 in categories02" v-bind:key="category02.id">
-                            <a v-if="category02.supply_category_id == category.id" class="dropdown-item" :href="url">{{ category02.name }}</a>
+                            <a v-if="category02.supply_category_id == category.id" class="dropdown-item" :href="'/api/brand/'+category02.id">{{ category02.name }}</a>
                         </div>
                       </div>
                     </div>  
@@ -40,12 +40,14 @@
 </template>
 <script>
 import axios from 'axios';
+//import brandlist from 'Brandlist';
 
   export default{
     data(){
       return{
         url:'/api/somebrand',
-        categories:[],
+        image: 'https://github.com/Jocco26/tattoo_shop_api/blob/main/src/assets/imgs/newlogo.png?raw=true',
+        categories:[],     
         categories02:[]
       }
     },
@@ -55,7 +57,7 @@ import axios from 'axios';
     },
     methods:{
       SuppliesCategory(){
-        fetch('supplies/show')
+        fetch('/api/supplies/show')
         .then(res => res.json())
         .then(res => {
             this.categories = res.data;
@@ -63,7 +65,7 @@ import axios from 'axios';
         .catch(err => console.log(err));
       },
       ProductCategory(){
-        fetch('supplies/show02')
+        fetch('/api/supplies/show02')
         .then(res => res.json())
         .then(res => {
             this.categories02 = res.data;
