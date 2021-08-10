@@ -45,14 +45,9 @@ Route::get('/supplies', 'App\Http\Controllers\SuppliesController@index');
 Route::get('/supplies/show', 'App\Http\Controllers\SuppliesController@loadSuppliesCategories');
 Route::get('/supplies/show02', 'App\Http\Controllers\SuppliesController@loadProductsCategories');
 
-Route::get('/brand/{id}', 'App\Http\Controllers\SuppliesController@loadBrands');
+//pass brand id to view then to component
+Route::get('/brand/{id}', 'App\Http\Controllers\SuppliesController@brandView');
 
+//load brands into component
+Route::get('brands', 'App\Http\Controllers\SuppliesController@loadBrands');
 
-//layout testing
-Route::get('/brands',function(){
-    return view('brands');
-});
-
-Route::get('/somebrand',function(){
-    return view('test');
-});

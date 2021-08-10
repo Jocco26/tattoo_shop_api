@@ -2,5 +2,5 @@
 @section('title','some brands')
 @section('content')
     
-    <brandlist-component :passed_data={{$brand_id}}></brandlist-component>
+    <brandlist-component :brand_id={{$brand_id}}></brandlist-component>
 @endsection

@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Supplies_Category;
 use App\Models\Products_Category;
+use App\Models\Brand;
 use App\Http\Resources\Supplies_Category as SuppliesCategoryResource;
 use App\Http\Resources\Products_Category as ProductsCategoryResource;
+use App\Http\Resources\Brand as BrandResource;
 
 class SuppliesController extends Controller
 {
@@ -35,11 +37,18 @@ class SuppliesController extends Controller
         return ProductsCategoryResource::collection($categories02);
     }
     
-    public function loadBrands($id){
+    public function brandView($id){
         $data = []; 
         $data['brand_id'] = $id;
 
         return view('BrandList',$data);
+    }
+
+    public function loadBrands(){
+        $brands = Brand::all();
+
+        return BrandResource::collection($brands);
+    
     }
 
     /**

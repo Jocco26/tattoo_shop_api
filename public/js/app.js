@@ -1931,8 +1931,38 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  props: ['brand_id']
+  props: ['brand_id'],
+  data: function data() {
+    return {
+      img: '../storage/images/brands/',
+      brands: []
+    };
+  },
+  mounted: function mounted() {
+    this.loadbrand();
+  },
+  methods: {
+    loadbrand: function loadbrand() {
+      var _this = this;
+
+      fetch('/api/brands').then(function (res) {
+        return res.json();
+      }).then(function (res) {
+        _this.brands = res.data;
+        console.log(_this.brands);
+      })["catch"](function (err) {
+        return console.log(err);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -38957,7 +38987,38 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("h1", [_vm._v(_vm._s(_vm.brand_id))])])
+  return _c("div", [
+    _c(
+      "div",
+      { staticClass: "container" },
+      _vm._l(_vm.brands, function(brand) {
+        return _c(
+          "div",
+          {
+            key: brand.id,
+            staticClass: "card",
+            staticStyle: { width: "18rem" }
+          },
+          [
+            _c("img", {
+              staticClass: "card-img-top",
+              attrs: {
+                src: "/storage/images/brands/" + brand.image,
+                alt: "Card image cap"
+              }
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c("p", { staticClass: "card-text" }, [
+                _vm._v(_vm._s(brand.name))
+              ])
+            ])
+          ]
+        )
+      }),
+      0
+    )
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
