@@ -1,13 +1,15 @@
 <template>
     <div>
-      <div class="container">
-          <div v-for="brand in brands" :key="brand.id" class="card" style="width: 18rem;">
-          <img class="card-img-top" :src="'/storage/images/brands/' + brand.image" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">{{brand.name}}</p>
-          </div>
+        <div class="serv">
+          <ul>
+            <li v-for="brand in brands" :key="brand.id">
+              <div v-if="brand.product_category_id == brand_id">
+                <img  class="brand-img" :src="'/storage/images/brands/' + brand.image" alt="brand image">
+                <label for="">{{brand.name}}</label>
+              </div>
+            </li>
+          </ul>
         </div>
-      </div>
     </div>
 </template>
 <script>
@@ -37,3 +39,20 @@ export default{
 }
 
 </script>
+<style>
+
+.brand-img{
+  width: 100%;
+}
+.serv ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  text-align: center;
+}
+
+.serv ul li {
+  list-style: none;
+  flex: 0 0 33.333333%;
+}
+</style>
