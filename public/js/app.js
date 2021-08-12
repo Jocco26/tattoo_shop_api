@@ -1940,6 +1940,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['brand_id'],
   data: function data() {
@@ -6901,7 +6904,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.brand-img{\r\n  width: 100%;\n}\n.serv ul {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  padding-left: 0;\r\n  text-align: center;\n}\n.serv ul li {\r\n  list-style: none;\r\n  flex: 0 0 33.333333%;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#brand-banner{\r\n  min-height: 180px;\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-image: url('/storage/images/needle-cartridges-banner.png');\n}\n.brand-img{\r\n  width: 90%;\r\n  margin: 10px;\n}\n.serv ul {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  padding-left: 0;\r\n  text-align: center;\n}\n.serv ul li {\r\n  list-style: none;\r\n  flex: 0 0 33.333333%;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39059,6 +39062,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
+    _c("div", { attrs: { id: "brand-banner" } }),
+    _vm._v(" "),
     _c("div", { staticClass: "serv" }, [
       _c(
         "ul",
@@ -39066,16 +39071,20 @@ var render = function() {
           return _c("li", { key: brand.id }, [
             brand.product_category_id == _vm.brand_id
               ? _c("div", [
-                  _c("img", {
-                    staticClass: "brand-img",
-                    attrs: {
-                      src: "/storage/images/brands/" + brand.image,
-                      alt: "brand image"
-                    }
-                  }),
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("img", {
+                      staticClass: "brand-img",
+                      attrs: {
+                        src: "/storage/images/brands/" + brand.image,
+                        alt: "brand image"
+                      }
+                    })
+                  ]),
                   _vm._v(" "),
-                  _c("label", { attrs: { for: "" } }, [
-                    _vm._v(_vm._s(brand.name))
+                  _c("a", { attrs: { href: "" } }, [
+                    _c("label", { attrs: { for: "" } }, [
+                      _vm._v(_vm._s(brand.name))
+                    ])
                   ])
                 ])
               : _vm._e()

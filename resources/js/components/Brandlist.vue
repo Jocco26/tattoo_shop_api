@@ -1,11 +1,14 @@
 <template>
     <div>
+        <div id="brand-banner">
+
+        </div>
         <div class="serv">
           <ul>
             <li v-for="brand in brands" :key="brand.id">
               <div v-if="brand.product_category_id == brand_id">
-                <img  class="brand-img" :src="'/storage/images/brands/' + brand.image" alt="brand image">
-                <label for="">{{brand.name}}</label>
+                <a href=""><img  class="brand-img" :src="'/storage/images/brands/' + brand.image" alt="brand image"></a>
+                <a href=""><label for="">{{brand.name}}</label></a>
               </div>
             </li>
           </ul>
@@ -40,9 +43,17 @@ export default{
 
 </script>
 <style>
+#brand-banner{
+  min-height: 180px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/storage/images/needle-cartridges-banner.png');
+}
 
 .brand-img{
-  width: 100%;
+  width: 90%;
+  margin: 10px;
+  
 }
 .serv ul {
   display: flex;
