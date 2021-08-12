@@ -25,6 +25,7 @@ Vue.component('homebody', require('./components/Homebody.vue').default);
 Vue.component('suppliesbanner', require('./components/SuppliesBanner.vue').default);
 Vue.component('suppliesbody', require('./components/SuppliesBody.vue').default);
 Vue.component('brandlist-component', require('./components/Brandlist.vue').default);
+Vue.component('productlist-component', require('./components/Productlist.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

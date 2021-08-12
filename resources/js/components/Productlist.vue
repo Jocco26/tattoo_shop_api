@@ -1,14 +1,13 @@
 <template>
     <div>
         <div id="brand-banner">
-
+          
         </div>
         <div class="serv">
           <ul>
-            <li v-for="brand in brands" :key="brand.id">
-              <div v-if="brand.product_category_id == brand_id">
-                <a href=""><img  class="brand-img" :src="'/storage/images/brands/' + brand.image" alt="brand image"></a>
-                <a :href="'/api/products/'+brand.id">{{brand.name}}</a>
+            <li v-for="product in products" :key="product.id">
+              <div v-if="product.brand_id == brand_id">
+                <a href=""><img  class="brand-img" :src="'/storage/images/products/' + product.image" alt="brand image"></a>
               </div>
             </li>
           </ul>
@@ -21,20 +20,21 @@ export default{
   props:['brand_id'],
     data(){
       return{
-        img:'../storage/images/brands/',
-        brands:[]
+        img:'../storage/images/products/',
+        brands:[],
+        products:[]
     }
   },
   mounted(){
-    this.loadbrand();
+    this.loadproducts();
   },
   methods:{
-    loadbrand(){
-      fetch('/api/brands')
+    loadproducts(){
+      fetch('/api/products')
         .then(res => res.json())
         .then(res => {
-            this.brands = res.data;
-            console.log(this.brands);
+            this.products = res.data;
+            console.log(this.products);
             })
         .catch(err => console.log(err));
     }
