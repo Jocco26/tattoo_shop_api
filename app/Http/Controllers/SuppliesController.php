@@ -46,8 +46,8 @@ class SuppliesController extends Controller
         return view('BrandList',$data);
     }
 
-    public function loadBrands(){
-        $brands = Brand::all();
+    public function loadBrands($id){
+        $brands = Brand::where('product_category_id','=',$id)->get();
 
         return BrandResource::collection($brands);
     
@@ -64,6 +64,13 @@ class SuppliesController extends Controller
         $products = Product::where('brand_id','=',$id)->get();
 
         return ProductResource::collection($products);
+    }
+
+    public function productDetailsView($id){
+        $data = []; 
+        $data['product_id'] = $id;
+
+        return view('ProductDetails',$data);
     }
 
     /**

@@ -6,10 +6,8 @@
         <div class="serv">
           <ul>
             <li v-for="product in products" :key="product.id">
-              <div v-if="product.brand_id == brand_id">
-                <a href=""><img  class="brand-img" :src="'/storage/images/products/' + product.image" alt="brand image"></a>
-                <p><b>{{product.name}}</b></p>
-              </div>
+                <a :href="'/api/product/show/'+product.id"><img  class="brand-img" :src="'/storage/images/products/' + product.image" alt="brand image"></a>
+                <a :href="'/api/product/show/'+product.id"><b>{{product.name}}</b></a>
             </li>
           </ul>
         </div>

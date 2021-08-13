@@ -49,7 +49,7 @@ Route::get('/supplies/show02', 'App\Http\Controllers\SuppliesController@loadProd
 Route::get('/brand/{id}', 'App\Http\Controllers\SuppliesController@brandView');
 
 //load brands into component
-Route::get('brands', 'App\Http\Controllers\SuppliesController@loadBrands');
+Route::get('brands/{id}', 'App\Http\Controllers\SuppliesController@loadBrands');
 
 //products
 //pass brand id to view then to component
@@ -57,5 +57,10 @@ Route::get('/products/{id}', 'App\Http\Controllers\SuppliesController@productVie
 
 //load products into component
 Route::get('product/{id}', 'App\Http\Controllers\SuppliesController@loadProducts');
+
+//products details
+
+//pass product id to view then to component
+Route::get('product/show/{id}', 'App\Http\Controllers\SuppliesController@productDetailsView');
 
 
