@@ -2224,6 +2224,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['brand_id'],
   data: function data() {
@@ -2240,7 +2241,7 @@ __webpack_require__.r(__webpack_exports__);
     loadproducts: function loadproducts() {
       var _this = this;
 
-      fetch('/api/products').then(function (res) {
+      fetch("/api/product/".concat(this.brand_id)).then(function (res) {
         return res.json();
       }).then(function (res) {
         _this.products = res.data;
@@ -39270,7 +39271,7 @@ var render = function() {
           return _c("li", { key: brand.id }, [
             brand.product_category_id == _vm.brand_id
               ? _c("div", [
-                  _c("a", { attrs: { href: "" } }, [
+                  _c("a", { attrs: { href: "/api/products/" + brand.id } }, [
                     _c("img", {
                       staticClass: "brand-img",
                       attrs: {
@@ -39750,7 +39751,9 @@ var render = function() {
                         alt: "brand image"
                       }
                     })
-                  ])
+                  ]),
+                  _vm._v(" "),
+                  _c("p", [_c("b", [_vm._v(_vm._s(product.name))])])
                 ])
               : _vm._e()
           ])

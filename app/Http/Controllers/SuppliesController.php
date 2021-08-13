@@ -60,8 +60,8 @@ class SuppliesController extends Controller
         return view('productlist',$data);
     }
 
-    public function loadProducts(){
-        $products = Product::all();
+    public function loadProducts($id){
+        $products = Product::where('brand_id','=',$id)->get();
 
         return ProductResource::collection($products);
     }

@@ -56,6 +56,6 @@ Route::get('brands', 'App\Http\Controllers\SuppliesController@loadBrands');
 Route::get('/products/{id}', 'App\Http\Controllers\SuppliesController@productView');
 
 //load products into component
-Route::get('products', 'App\Http\Controllers\SuppliesController@loadProducts');
+Route::get('product/{id}', 'App\Http\Controllers\SuppliesController@loadProducts');
 
 

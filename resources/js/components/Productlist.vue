@@ -8,6 +8,7 @@
             <li v-for="product in products" :key="product.id">
               <div v-if="product.brand_id == brand_id">
                 <a href=""><img  class="brand-img" :src="'/storage/images/products/' + product.image" alt="brand image"></a>
+                <p><b>{{product.name}}</b></p>
               </div>
             </li>
           </ul>
@@ -30,7 +31,7 @@ export default{
   },
   methods:{
     loadproducts(){
-      fetch('/api/products')
+      fetch(`/api/product/${this.brand_id}`)
         .then(res => res.json())
         .then(res => {
             this.products = res.data;

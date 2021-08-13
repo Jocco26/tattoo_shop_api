@@ -7,7 +7,7 @@
           <ul>
             <li v-for="brand in brands" :key="brand.id">
               <div v-if="brand.product_category_id == brand_id">
-                <a href=""><img  class="brand-img" :src="'/storage/images/brands/' + brand.image" alt="brand image"></a>
+                <a :href="'/api/products/'+brand.id"><img  class="brand-img" :src="'/storage/images/brands/' + brand.image" alt="brand image"></a>
                 <a :href="'/api/products/'+brand.id">{{brand.name}}</a>
               </div>
             </li>
