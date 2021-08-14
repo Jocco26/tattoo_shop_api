@@ -39855,7 +39855,7 @@ var render = function() {
               _c("img", {
                 staticClass: "brand-img",
                 attrs: {
-                  src: "/storage/images/products/" + product.image,
+                  src: "/storage/images/products/" + product.thumbnail,
                   alt: "brand image"
                 }
               })

@@ -6,7 +6,7 @@
         <div class="serv">
           <ul>
             <li v-for="product in products" :key="product.id">
-                <a :href="'/api/product/show/'+product.id"><img  class="brand-img" :src="'/storage/images/products/' + product.image" alt="brand image"></a>
+                <a :href="'/api/product/show/'+product.id"><img  class="brand-img" :src="'/storage/images/products/' + product.thumbnail" alt="brand image"></a>
                 <a :href="'/api/product/show/'+product.id"><b>{{product.name}}</b></a>
             </li>
           </ul>
