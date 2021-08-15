@@ -2219,6 +2219,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['product_id'],
   data: function data() {
@@ -2229,94 +2231,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     this.loadbrand();
-    magnify("myimage", 3);
-
-    function magnify(imgID, zoom) {
-      var img, glass, w, h, bw;
-      img = document.getElementById(imgID);
-      /* Create magnifier glass: */
-
-      glass = document.createElement("DIV");
-      glass.setAttribute("class", "img-magnifier-glass");
-      /* Insert magnifier glass: */
-
-      img.parentElement.insertBefore(glass, img);
-      /* Set background properties for the magnifier glass: */
-
-      glass.style.backgroundImage = "url('" + img.src + "')";
-      glass.style.backgroundRepeat = "no-repeat";
-      glass.style.backgroundSize = img.width * zoom + "px " + img.height * zoom + "px";
-      bw = 3;
-      w = glass.offsetWidth / 2;
-      h = glass.offsetHeight / 2;
-      /* Execute a function when someone moves the magnifier glass over the image: */
-
-      glass.addEventListener("mousemove", moveMagnifier);
-      img.addEventListener("mousemove", moveMagnifier);
-      /*and also for touch screens:*/
-
-      glass.addEventListener("touchmove", moveMagnifier);
-      img.addEventListener("touchmove", moveMagnifier);
-
-      function moveMagnifier(e) {
-        var pos, x, y;
-        /* Prevent any other actions that may occur when moving over the image */
-
-        e.preventDefault();
-        /* Get the cursor's x and y positions: */
-
-        pos = getCursorPos(e);
-        x = pos.x;
-        y = pos.y;
-        /* Prevent the magnifier glass from being positioned outside the image: */
-
-        if (x > img.width - w / zoom) {
-          x = img.width - w / zoom;
-        }
-
-        if (x < w / zoom) {
-          x = w / zoom;
-        }
-
-        if (y > img.height - h / zoom) {
-          y = img.height - h / zoom;
-        }
-
-        if (y < h / zoom) {
-          y = h / zoom;
-        }
-        /* Set the position of the magnifier glass: */
-
-
-        glass.style.left = x - w + "px";
-        glass.style.top = y - h + "px";
-        /* Display what the magnifier glass "sees": */
-
-        glass.style.backgroundPosition = "-" + (x * zoom - w + bw) + "px -" + (y * zoom - h + bw) + "px";
-      }
-
-      function getCursorPos(e) {
-        var a,
-            x = 0,
-            y = 0;
-        e = e || window.event;
-        /* Get the x and y positions of the image: */
-
-        a = img.getBoundingClientRect();
-        /* Calculate the cursor's x and y coordinates, relative to the image: */
-
-        x = e.pageX - a.left;
-        y = e.pageY - a.top;
-        /* Consider any page scrolling: */
-
-        x = x - window.pageXOffset;
-        y = y - window.pageYOffset;
-        return {
-          x: x,
-          y: y
-        };
-      }
-    }
   },
   methods: {
     loadbrand: function loadbrand() {
@@ -7149,7 +7063,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#product-details{\n    margin-top: 75px;\n}\n#myimage{\n    width:600px;\n    height:400px;\n}\n* {box-sizing: border-box;}\n.img-magnifier-container {\nposition: relative;\n}\n.img-magnifier-glass {\nposition: absolute;\nborder: 3px solid #000;\nborder-radius: 50%;\ncursor: none;\n/*Set the size of the magnifier glass:*/\nwidth: 100px;\nheight: 100px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#product-details{\n    margin-top: 75px;\n}\n#myimage{\n    width:100%;\n}\n* {box-sizing: border-box;}\n.img-magnifier-container {\nposition: relative;\n}\n.img-magnifier-glass {\nposition: absolute;\nborder: 3px solid #000;\nborder-radius: 50%;\ncursor: none;\n/*Set the size of the magnifier glass:*/\nwidth: 100px;\nheight: 100px;\n}\n#product-name{\n    font-size: 50px;\n}\n#product-price{\n    font-size: 30px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -40024,7 +39938,15 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" })
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("p", { attrs: { id: "product-name" } }, [
+            _c("b", [_vm._v(_vm._s(detail.name))])
+          ]),
+          _vm._v(" "),
+          _c("p", { attrs: { id: "product-price" } }, [
+            _c("b", [_vm._v("₱" + _vm._s(detail.price))])
+          ])
+        ])
       ])
     }),
     0
