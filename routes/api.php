@@ -55,12 +55,15 @@ Route::get('brands/{id}', 'App\Http\Controllers\SuppliesController@loadBrands');
 //pass brand id to view then to component
 Route::get('/products/{id}', 'App\Http\Controllers\SuppliesController@productView');
 
-//load products into component
+//load products list into component
 Route::get('product/{id}', 'App\Http\Controllers\SuppliesController@loadProducts');
 
 //products details
 
 //pass product id to view then to component
 Route::get('product/show/{id}', 'App\Http\Controllers\SuppliesController@productDetailsView');
+
+//load product details into component
+Route::get('product/details/{id}', 'App\Http\Controllers\SuppliesController@loadProductDetails');
 
 

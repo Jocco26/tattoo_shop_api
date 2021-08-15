@@ -73,6 +73,12 @@ class SuppliesController extends Controller
         return view('ProductDetails',$data);
     }
 
+    public function loadProductDetails($id){
+        $products = Product::where('id','=',$id)->get();
+
+        return ProductResource::collection($products);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
