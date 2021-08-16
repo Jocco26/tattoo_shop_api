@@ -9,7 +9,12 @@
             <div class="col-md-6">
                 <p id="product-name"><b>{{detail.name}}</b></p>
                 <p id="product-price"><b>₱{{detail.price}}</b></p>
+            <div class="quantity buttons_added">
+                
+                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="qty-input" size="4" pattern="" inputmode="">
+                <button type="button" class="btn btn-dark btn-lg">add to cart</button>
             </div>
+            </div>         
         </div>
     </div>
 </template>
@@ -70,5 +75,10 @@ export default{
 
     #product-price{
         font-size: 30px;
+    }
+
+    .qty-input{
+        width: 8%;
+        font-size: 20px;
     }
 </style>

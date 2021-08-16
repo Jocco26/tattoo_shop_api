@@ -2221,6 +2221,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   props: ['product_id'],
   data: function data() {
@@ -7063,7 +7068,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#product-details{\n    margin-top: 75px;\n}\n#myimage{\n    width:100%;\n}\n* {box-sizing: border-box;}\n.img-magnifier-container {\nposition: relative;\n}\n.img-magnifier-glass {\nposition: absolute;\nborder: 3px solid #000;\nborder-radius: 50%;\ncursor: none;\n/*Set the size of the magnifier glass:*/\nwidth: 100px;\nheight: 100px;\n}\n#product-name{\n    font-size: 50px;\n}\n#product-price{\n    font-size: 30px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#product-details{\n    margin-top: 75px;\n}\n#myimage{\n    width:100%;\n}\n* {box-sizing: border-box;}\n.img-magnifier-container {\nposition: relative;\n}\n.img-magnifier-glass {\nposition: absolute;\nborder: 3px solid #000;\nborder-radius: 50%;\ncursor: none;\n/*Set the size of the magnifier glass:*/\nwidth: 100px;\nheight: 100px;\n}\n#product-name{\n    font-size: 50px;\n}\n#product-price{\n    font-size: 30px;\n}\n.qty-input{\n    width: 8%;\n    font-size: 20px;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39945,14 +39950,45 @@ var render = function() {
           _vm._v(" "),
           _c("p", { attrs: { id: "product-price" } }, [
             _c("b", [_vm._v("₱" + _vm._s(detail.price))])
-          ])
+          ]),
+          _vm._v(" "),
+          _vm._m(0, true)
         ])
       ])
     }),
     0
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "quantity buttons_added" }, [
+      _c("input", {
+        staticClass: "qty-input",
+        attrs: {
+          type: "number",
+          step: "1",
+          min: "1",
+          max: "",
+          name: "quantity",
+          value: "1",
+          title: "Qty",
+          size: "4",
+          pattern: "",
+          inputmode: ""
+        }
+      }),
+      _vm._v(" "),
+      _c(
+        "button",
+        { staticClass: "btn btn-dark btn-lg", attrs: { type: "button" } },
+        [_vm._v("add to cart")]
+      )
+    ])
+  }
+]
 render._withStripped = true
 
 
