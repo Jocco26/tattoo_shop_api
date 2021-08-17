@@ -50,7 +50,7 @@ export default{
   background-image: url('/storage/images/needle-cartridges-banner.png');
 }
 
-.brand-img{
+.product-img{
   width: 90%;
   margin: 10px;
   
