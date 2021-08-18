@@ -12,7 +12,7 @@
             <div class="quantity buttons_added">
                 
                 <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="qty-input" size="4" pattern="" inputmode="">
-                <button type="button" class="btn btn-dark btn-lg">add to cart</button>
+                <button type="button" class="btn btn-dark btn-lg" v-on:click="cart.push(item)">add to cart</button>
             </div>
             </div>         
         </div>

@@ -2322,8 +2322,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
 //
 //
 //
@@ -2364,8 +2362,16 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
- //import brandlist from 'Brandlist';
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -7092,7 +7098,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n#brand-banner{\r\n  min-height: 190px;\r\n  background-repeat: no-repeat;\r\n  background-position:center;\r\n  background-size: cover;\r\n  background-image: url('/storage/images/needle-cartridges-banner.png');\n}\n.brand-img{\r\n  width: 90%;\r\n  margin: 10px;\n}\n.serv ul {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  padding-left: 0;\r\n  text-align: center;\n}\n.serv ul li {\r\n  list-style: none;\r\n  flex: 0 0 33.333333%;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n#brand-banner{\r\n  min-height: 190px;\r\n  background-repeat: no-repeat;\r\n  background-position:center;\r\n  background-size: cover;\r\n  background-image: url('/storage/images/needle-cartridges-banner.png');\n}\n.product-img{\r\n  width: 10%;\r\n  margin: 10px;\n}\n.serv ul {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  padding-left: 0;\r\n  text-align: center;\n}\n.serv ul li {\r\n  list-style: none;\r\n  flex: 0 0 33.333333%;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7116,7 +7122,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nbody{\n    margin: 0;\n    padding: 0;\n}\n#spaces{\n  background-color: black;\n}\n.menu-area{\n    position: static;\n}\n.mega-area{\n    position: absolute;\n    padding-left:100px;\n    padding-right:100px;\n    width: 100%;\n    left: 0;\n    right: 0;\n    top: 64px;\n}\n.dropdown-item{\n    padding: 5px 0;\n}\n.navbar-nav li:hover .dropdown-menu {\n    display: block;\n    margin-top: 0;\n}\n\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nbody{\n    margin: 0;\n    padding: 0;\n}\n#spaces{\n  background-color: black;\n}\n.cart{\n  color: white;\n}\n.menu-area{\n    position: static;\n}\n.mega-area{\n    position: absolute;\n    padding-left:100px;\n    padding-right:100px;\n    width: 100%;\n    left: 0;\n    right: 0;\n    top: 64px;\n}\n.dropdown-item{\n    padding: 5px 0;\n}\n.navbar-nav li:hover .dropdown-menu {\n    display: block;\n    margin-top: 0;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -39952,43 +39958,44 @@ var render = function() {
             _c("b", [_vm._v("₱" + _vm._s(detail.price))])
           ]),
           _vm._v(" "),
-          _vm._m(0, true)
+          _c("div", { staticClass: "quantity buttons_added" }, [
+            _c("input", {
+              staticClass: "qty-input",
+              attrs: {
+                type: "number",
+                step: "1",
+                min: "1",
+                max: "",
+                name: "quantity",
+                value: "1",
+                title: "Qty",
+                size: "4",
+                pattern: "",
+                inputmode: ""
+              }
+            }),
+            _vm._v(" "),
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-dark btn-lg",
+                attrs: { type: "button" },
+                on: {
+                  click: function($event) {
+                    return _vm.cart.push(_vm.item)
+                  }
+                }
+              },
+              [_vm._v("add to cart")]
+            )
+          ])
         ])
       ])
     }),
     0
   )
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "quantity buttons_added" }, [
-      _c("input", {
-        staticClass: "qty-input",
-        attrs: {
-          type: "number",
-          step: "1",
-          min: "1",
-          max: "",
-          name: "quantity",
-          value: "1",
-          title: "Qty",
-          size: "4",
-          pattern: "",
-          inputmode: ""
-        }
-      }),
-      _vm._v(" "),
-      _c(
-        "button",
-        { staticClass: "btn btn-dark btn-lg", attrs: { type: "button" } },
-        [_vm._v("add to cart")]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -40024,8 +40031,7 @@ var render = function() {
                 staticClass: "product-img",
                 attrs: {
                   src:
-                    "/storage/images/products/thumbnails/" + product.thumbnail,
-                  alt: "brand image"
+                    "/storage/images/products/thumbnails/" + product.thumbnail
                 }
               })
             ]),
@@ -40164,7 +40170,9 @@ var render = function() {
                       0
                     )
                   ]
-                )
+                ),
+                _vm._v(" "),
+                _vm._m(1)
               ]
             )
           ])
@@ -40193,6 +40201,35 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "ml-2 cart" }, [
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-light btn-sm dropdown-toggle",
+          attrs: {
+            id: "cartDropdown",
+            "data-toggle": "dropdown",
+            "aria-hashpopup": "true",
+            "aria-expanded": "false"
+          }
+        },
+        [
+          _c("b", [_vm._v("cart:")]),
+          _vm._v(" "),
+          _c("span", { staticClass: "badge badge-pill badge-success" })
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", {
+        staticClass: "dropdown-menu dropdown-menu-right",
+        attrs: { "aria-labelledby": "cartDropdown" }
+      })
+    ])
   }
 ]
 render._withStripped = true

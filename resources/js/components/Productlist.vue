@@ -6,7 +6,7 @@
         <div class="serv">
           <ul>
             <li v-for="product in products" :key="product.id">
-                <a :href="'/api/product/show/'+product.id"><img  class="product-img" :src="'/storage/images/products/thumbnails/' + product.thumbnail" alt="brand image"></a>
+                <a :href="'/api/product/show/'+product.id"><img  class="product-img" :src="'/storage/images/products/thumbnails/' + product.thumbnail"></a>
                 <a :href="'/api/product/show/'+product.id"><b>{{product.name}}</b></a>
             </li>
           </ul>
@@ -51,7 +51,7 @@ export default{
 }
 
 .product-img{
-  width: 90%;
+  width: 10%;
   margin: 10px;
   
 }
