@@ -51,7 +51,7 @@ export default{
 }
 
 .product-img{
-  width: 10%;
+  width: 100%;
   margin: 10px;
   
 }
