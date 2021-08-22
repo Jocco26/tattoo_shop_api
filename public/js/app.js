@@ -2249,7 +2249,8 @@ __webpack_require__.r(__webpack_exports__);
       })["catch"](function (err) {
         return console.log(err);
       });
-    }
+    },
+    addproduct: function addproduct() {}
   }
 });
 

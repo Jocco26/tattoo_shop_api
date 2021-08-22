@@ -39,6 +39,9 @@ export default{
             console.log(this.details)  
             })
         .catch(err => console.log(err));
+    },
+    addproduct(){
+        
     }
   }
   
