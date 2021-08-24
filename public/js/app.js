@@ -2396,6 +2396,9 @@ __webpack_require__.r(__webpack_exports__);
       categories02: []
     };
   },
+  components: {
+    Cart: _Cart_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  },
   created: function created() {
     this.SuppliesCategory();
     this.ProductCategory();
@@ -40322,7 +40325,7 @@ var render = function() {
                   ]
                 ),
                 _vm._v(" "),
-                _c("cart-component")
+                _c("Cart")
               ],
               1
             )

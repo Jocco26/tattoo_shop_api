@@ -31,7 +31,7 @@
                 </li>      
               </ul>
             </div>
-                  <cart-component></cart-component>
+                  <Cart></Cart>
           </nav>
         </div>
       </div>
@@ -51,6 +51,9 @@ import Cart from "./Cart.vue";
         categories:[],     
         categories02:[]
       }
+    },
+    components:{
+      Cart
     },
     created(){
         this.SuppliesCategory();
