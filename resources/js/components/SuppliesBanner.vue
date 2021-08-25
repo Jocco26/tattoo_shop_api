@@ -31,7 +31,7 @@
                 </li>      
               </ul>
             </div>
-                  <Cart></Cart>
+                <Cart/>
           </nav>
         </div>
       </div>
