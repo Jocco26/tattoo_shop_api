@@ -13,14 +13,14 @@
                 
                 <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="qty-input" size="4" pattern="" inputmode="">
                 <button type="button" class="btn btn-dark btn-lg" v-on:click="cart.push(item)">add to cart</button>
-                <Cartdata message="hello"/>
+                <Cart btn-text="hello"/>
             </div>
             </div>         
         </div>
     </div>
 </template>
 <script>
-import Cartdata from "./Cartdata.vue";
+import Cart from "./Cart.vue";
 export default{
     props:['product_id'],
     data(){
@@ -31,7 +31,7 @@ export default{
     }
   },
   components:{
-      Cartdata
+      Cart
   },
 created(){
     this.loadbrand();

@@ -3,7 +3,7 @@
                     <button class="btn btn-light btn-sm dropdown-toggle"
                      id="cartDropdown" data-toggle="dropdown"
                      aria-hashpopup="true" aria-expanded="false">
-                  <b>cart:</b> 
+                  <b>cart:{{btnText}}</b> 
                   <span class="badge badge-pill badge-success"></span>
                   </button>
                   <div class="dropdown-menu dropdown-menu-right"
@@ -11,5 +11,8 @@
                 </div>
 </template>
 <script>
-
+export default{
+  props:['btnText']
+}
+  
 </script>
