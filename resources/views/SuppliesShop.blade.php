@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title','brands')
+@section('title','Supplies')
 @section('content')
 
 <suppliesbody></suppliesbody>

@@ -13,7 +13,7 @@
                 
                 <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="qty-input" size="4" pattern="" inputmode="">
                 <button type="button" class="btn btn-dark btn-lg" v-on:click="cart.push(item)">add to cart</button>
-                <Cart btn-text="hello"/>
+                <Cart :btn-text="'hello'"/>
             </div>
             </div>         
         </div>

@@ -44,6 +44,7 @@ import Cart from "./Cart.vue";
 
 
   export default{
+    props:['btnText'],
     data(){
       return{
         url:'/api/somebrand',
